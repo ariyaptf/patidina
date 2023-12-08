@@ -1,0 +1,2319 @@
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+2023-11-24 09:56:14.159158 [UID:65534][2309] Reached max children process limit: 5, extra: 1, current: 6, busy: 5, please increase LSAPI_CHILDREN.
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /FD873AC4-CF86-4FED-84EC-4BD59C6F17A7
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 128.199.144.189/FD873AC4-CF86-4FED-84EC-4BD59C6F17A7/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Not Found: /Public/home/js/check.js
+Not Found: /Public/home/js/check.js
+Not Found: /static/admin/javascript/hetong.js
+Not Found: /static/admin/javascript/hetong.js
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /wp-login.php
+Not Found: /.git/config
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /.env.bak
+Not Found: /.env.bak
+Not Found: /.env
+Not Found: /.env
+Not Found: /env.js
+Not Found: /env.js
+Not Found: /config.env
+Not Found: /config.env
+Not Found: /.env.dist
+Not Found: /.env.dist
+Not Found: /.env.dev
+Not Found: /.env.dev
+Not Found: /.env.local
+Not Found: /.env.local
+Not Found: /public/.env
+Not Found: /public/.env
+Not Found: /laravel/.env
+Not Found: /laravel/.env
+Not Found: /laravel/core/.env
+Not Found: /laravel/core/.env
+Not Found: /beta/.env
+Not Found: /beta/.env
+Not Found: /kyc/.env
+Not Found: /kyc/.env
+Not Found: /prod/.env
+Not Found: /prod/.env
+Not Found: /.env.backup
+Not Found: /.env.backup
+Not Found: /.env.docker.dev
+Not Found: /.env.docker.dev
+Not Found: /.env.php
+Not Found: /.env.php
+Not Found: /.env.prod
+Not Found: /.env.prod
+Not Found: /.env.production.local
+Not Found: /.env.production.local
+Not Found: /.env.sample.php
+Not Found: /.env.sample.php
+Not Found: /.env.save
+Not Found: /.env.save
+Not Found: /.env.stage
+Not Found: /.env.stage
+Not Found: /.env.test
+Not Found: /.env.test
+Not Found: /.env.test.local
+Not Found: /.env.test.local
+Not Found: /.env.local
+Not Found: /.env.local
+Not Found: /.env.production
+Not Found: /.env.production
+Not Found: /.env.staging
+Not Found: /.env.staging
+Not Found: /backup/.env
+Not Found: /backup/.env
+Not Found: /backup/.env.local
+Not Found: /backup/.env.local
+Not Found: /backup/.env.production
+Not Found: /backup/.env.production
+Not Found: /backup/.env.staging
+Not Found: /backup/.env.staging
+Not Found: /public/.env
+Not Found: /public/.env
+Not Found: /public/.env.local
+Not Found: /public/.env.local
+Not Found: /public/.env.production
+Not Found: /public/.env.production
+Not Found: /public/.env.staging
+Not Found: /public/.env.staging
+Not Found: /laravel/.env
+Not Found: /laravel/.env
+Not Found: /laravel/.env.local
+Not Found: /laravel/.env.local
+Not Found: /laravel/.env.production
+Not Found: /laravel/.env.production
+Not Found: /laravel/.env.staging
+Not Found: /laravel/.env.staging
+Not Found: /laravel/core/.env
+Not Found: /laravel/core/.env
+Not Found: /laravel/core/.env.local
+Not Found: /laravel/core/.env.local
+Not Found: /laravel/core/.env.production
+Not Found: /laravel/core/.env.production
+Not Found: /laravel/core/.env.staging
+Not Found: /laravel/core/.env.staging
+Not Found: /beta/.env
+Not Found: /beta/.env
+Not Found: /beta/.env.local
+Not Found: /beta/.env.local
+Not Found: /beta/.env.production
+Not Found: /beta/.env.production
+Not Found: /beta/.env.staging
+Not Found: /beta/.env.staging
+Not Found: /live/.env
+Not Found: /live/.env
+Not Found: /live/.env.local
+Not Found: /live/.env.local
+Not Found: /live/.env.production
+Not Found: /live/.env.production
+Not Found: /live/.env.staging
+Not Found: /live/.env.staging
+Not Found: /demo/.env
+Not Found: /demo/.env
+Not Found: /demo/.env.local
+Not Found: /demo/.env.local
+Not Found: /demo/.env.production
+Not Found: /demo/.env.production
+Not Found: /demo/.env.staging
+Not Found: /demo/.env.staging
+Not Found: /test/.env
+Not Found: /test/.env
+Not Found: /test/.env.local
+Not Found: /test/.env.local
+Not Found: /test/.env.production
+Not Found: /test/.env.production
+Not Found: /test/.env.staging
+Not Found: /test/.env.staging
+Not Found: /kyc/.env
+Not Found: /kyc/.env
+Not Found: /kyc/.env.local
+Not Found: /kyc/.env.local
+Not Found: /kyc/.env.production
+Not Found: /kyc/.env.production
+Not Found: /kyc/.env.staging
+Not Found: /kyc/.env.staging
+Not Found: /client/.env
+Not Found: /client/.env
+Not Found: /client/.env.local
+Not Found: /client/.env.local
+Not Found: /client/.env.production
+Not Found: /client/.env.production
+Not Found: /client/.env.staging
+Not Found: /client/.env.staging
+Not Found: /user/.env
+Not Found: /user/.env
+Not Found: /user/.env.local
+Not Found: /user/.env.local
+Not Found: /user/.env.staging
+Not Found: /user/.env.staging
+Not Found: /api/.env
+Not Found: /api/.env
+Not Found: /api/.env.local
+Not Found: /api/.env.local
+Not Found: /api/.env.staging
+Not Found: /api/.env.staging
+Not Found: /api/.env.production
+Not Found: /api/.env.production
+Not Found: /apis/.env
+Not Found: /apis/.env
+Not Found: /apis/.env.local
+Not Found: /apis/.env.local
+Not Found: /apis/.env.staging
+Not Found: /apis/.env.staging
+Not Found: /apis/.env.production
+Not Found: /apis/.env.production
+Not Found: /backend/.env
+Not Found: /backend/.env
+Not Found: /backend/.env.local
+Not Found: /backend/.env.local
+Not Found: /backend/.env.staging
+Not Found: /backend/.env.staging
+Not Found: /backend/.env.production
+Not Found: /backend/.env.production
+Not Found: /server/.env
+Not Found: /server/.env
+Not Found: /server/.env.local
+Not Found: /server/.env.local
+Not Found: /server/.env.staging
+Not Found: /server/.env.staging
+Not Found: /server/.env.production
+Not Found: /server/.env.production
+Not Found: /app/.env
+Not Found: /app/.env
+Not Found: /app/.env.local
+Not Found: /app/.env.local
+Not Found: /app/.env.staging
+Not Found: /app/.env.staging
+Not Found: /app/.env.production
+Not Found: /app/.env.production
+Not Found: /project/.env
+Not Found: /project/.env
+Not Found: /project/.env.local
+Not Found: /project/.env.local
+Not Found: /project/.env.staging
+Not Found: /project/.env.staging
+Not Found: /project/.env.production
+Not Found: /project/.env.production
+Not Found: /cron/.env
+Not Found: /cron/.env
+Not Found: /cron/.env.local
+Not Found: /cron/.env.local
+Not Found: /cron/.env.staging
+Not Found: /cron/.env.staging
+Not Found: /cron/.env.production
+Not Found: /cron/.env.production
+Not Found: /crm/.env
+Not Found: /crm/.env
+Not Found: /crm/.env.local
+Not Found: /crm/.env.local
+Not Found: /crm/.env.staging
+Not Found: /crm/.env.staging
+Not Found: /crm/.env.production
+Not Found: /crm/.env.production
+Not Found: /current/.env
+Not Found: /current/.env
+Not Found: /current/.env.local
+Not Found: /current/.env.local
+Not Found: /current/.env.staging
+Not Found: /current/.env.staging
+Not Found: /current/.env.production
+Not Found: /current/.env.production
+Not Found: /dev/.env
+Not Found: /dev/.env
+Not Found: /dev/.env.local
+Not Found: /dev/.env.local
+Not Found: /dev/.env.staging
+Not Found: /dev/.env.staging
+Not Found: /dev/.env.production
+Not Found: /dev/.env.production
+Not Found: /develop/.env
+Not Found: /develop/.env
+Not Found: /develop/.env.local
+Not Found: /develop/.env.local
+Not Found: /develop/.env.staging
+Not Found: /develop/.env.staging
+Not Found: /develop/.env.production
+Not Found: /develop/.env.production
+Not Found: /development/.env
+Not Found: /development/.env
+Not Found: /development/.env.local
+Not Found: /development/.env.local
+Not Found: /development/.env.staging
+Not Found: /development/.env.staging
+Not Found: /development/.env.production
+Not Found: /development/.env.production
+Not Found: /prod/.env
+Not Found: /prod/.env
+Not Found: /prod/.env.local
+Not Found: /prod/.env.local
+Not Found: /prod/.env.staging
+Not Found: /prod/.env.staging
+Not Found: /prod/.env.production
+Not Found: /prod/.env.production
+Not Found: /product/.env
+Not Found: /product/.env
+Not Found: /product/.env.local
+Not Found: /product/.env.local
+Not Found: /product/.env.staging
+Not Found: /product/.env.staging
+Not Found: /product/.env.production
+Not Found: /product/.env.production
+Not Found: /production/.env
+Not Found: /production/.env
+Not Found: /production/.env.local
+Not Found: /production/.env.local
+Not Found: /production/.env.staging
+Not Found: /production/.env.staging
+Not Found: /production/.env.production
+Not Found: /production/.env.production
+Not Found: /portal/.env
+Not Found: /portal/.env
+Not Found: /portal/.env.local
+Not Found: /portal/.env.local
+Not Found: /portal/.env.staging
+Not Found: /portal/.env.staging
+Not Found: /portal/.env.production
+Not Found: /portal/.env.production
+Not Found: /qa/.env
+Not Found: /qa/.env
+Not Found: /qa/.env.local
+Not Found: /qa/.env.local
+Not Found: /qa/.env.staging
+Not Found: /qa/.env.staging
+Not Found: /qa/.env.production
+Not Found: /qa/.env.production
+Not Found: /stg/.env
+Not Found: /stg/.env
+Not Found: /stg/.env.local
+Not Found: /stg/.env.local
+Not Found: /stg/.env.staging
+Not Found: /stg/.env.staging
+Not Found: /stg/.env.production
+Not Found: /stg/.env.production
+Not Found: /staging/.env
+Not Found: /staging/.env
+Not Found: /staging/.env.local
+Not Found: /staging/.env.local
+Not Found: /staging/.env.staging
+Not Found: /staging/.env.staging
+Not Found: /staging/.env.production
+Not Found: /staging/.env.production
+Not Found: /service/.env
+Not Found: /service/.env
+Not Found: /service/.env.local
+Not Found: /service/.env.local
+Not Found: /service/.env.staging
+Not Found: /service/.env.staging
+Not Found: /service/.env.production
+Not Found: /service/.env.production
+Not Found: /services/.env
+Not Found: /services/.env
+Not Found: /services/.env.local
+Not Found: /services/.env.local
+Not Found: /services/.env.staging
+Not Found: /services/.env.staging
+Not Found: /services/.env.production
+Not Found: /services/.env.production
+Not Found: /storage/.env
+Not Found: /storage/.env
+Not Found: /storage/.env.local
+Not Found: /storage/.env.local
+Not Found: /storage/.env.staging
+Not Found: /storage/.env.staging
+Not Found: /storage/.env.production
+Not Found: /storage/.env.production
+Not Found: /old/.env
+Not Found: /old/.env
+Not Found: /old/.env.local
+Not Found: /old/.env.local
+Not Found: /old/.env.staging
+Not Found: /old/.env.staging
+Not Found: /old/.env.production
+Not Found: /old/.env.production
+Not Found: /new/.env
+Not Found: /new/.env
+Not Found: /new/.env.local
+Not Found: /new/.env.local
+Not Found: /new/.env.staging
+Not Found: /new/.env.staging
+Not Found: /new/.env.production
+Not Found: /new/.env.production
+Not Found: /web/.env
+Not Found: /web/.env
+Not Found: /web/.env.local
+Not Found: /web/.env.local
+Not Found: /web/.env.staging
+Not Found: /web/.env.staging
+Not Found: /web/.env.production
+Not Found: /web/.env.production
+Not Found: /website/.env
+Not Found: /website/.env
+Not Found: /website/.env.local
+Not Found: /website/.env.local
+Not Found: /website/.env.staging
+Not Found: /website/.env.staging
+Not Found: /website/.env.production
+Not Found: /website/.env.production
+Not Found: /market/.env
+Not Found: /market/.env
+Not Found: /market/.env.local
+Not Found: /market/.env.local
+Not Found: /market/.env.staging
+Not Found: /market/.env.staging
+Not Found: /market/.env.production
+Not Found: /market/.env.production
+Not Found: /marketing/.env
+Not Found: /marketing/.env
+Not Found: /marketing/.env.local
+Not Found: /marketing/.env.local
+Not Found: /marketing/.env.staging
+Not Found: /marketing/.env.staging
+Not Found: /marketing/.env.production
+Not Found: /marketing/.env.production
+Not Found: /shop/.env
+Not Found: /shop/.env
+Not Found: /shop/.env.local
+Not Found: /shop/.env.local
+Not Found: /shop/.env.staging
+Not Found: /shop/.env.staging
+Not Found: /shop/.env.production
+Not Found: /shop/.env.production
+Not Found: /public_html/.env
+Not Found: /public_html/.env
+Not Found: /public_html/.env.local
+Not Found: /public_html/.env.local
+Not Found: /public_html/.env.staging
+Not Found: /public_html/.env.staging
+Not Found: /public_html/.env.production
+Not Found: /public_html/.env.production
+Not Found: /xampp/.env
+Not Found: /xampp/.env
+Not Found: /xampp/.env.local
+Not Found: /xampp/.env.local
+Not Found: /xampp/.env.staging
+Not Found: /xampp/.env.staging
+Not Found: /xampp/.env.production
+Not Found: /xampp/.env.production
+Not Found: /api/.env
+Not Found: /api/.env
+Not Found: /.docker/.env
+Not Found: /.docker/.env
+Not Found: /.docker/laravel/app/.env
+Not Found: /.docker/laravel/app/.env
+Not Found: /env.backup
+Not Found: /env.backup
+Not Found: /.environment
+Not Found: /.environment
+Not Found: /.envrc
+Not Found: /.envrc
+Not Found: /.envs
+Not Found: /.envs
+Not Found: /.env~
+Not Found: /.env~
+Not Found: /.gitlab-ci/.env
+Not Found: /.gitlab-ci/.env
+Not Found: /.vscode/.env
+Not Found: /.vscode/.env
+Not Found: /mailer/.env
+Not Found: /mailer/.env
+Not Found: /twitter/.env
+Not Found: /twitter/.env
+Not Found: /.env.development.local
+Not Found: /.env.development.local
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2018/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /media/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /Public/home/js/check.js
+Not Found: /Public/home/js/check.js
+Not Found: /static/admin/javascript/hetong.js
+Not Found: /static/admin/javascript/hetong.js
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /HYtG/
+Not Found: /WKaZ/
+Not Found: /aab8/
+Not Found: /jquery-3.3.1.slim.min.js
+Not Found: /aab9/
+Not Found: /jquery-3.3.2.slim.min.js
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /laravel52/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /geoserver/web/
+Not Found: /.env
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /.env
+Not Found: /favicon.ico
+Not Found: /.env
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /administrator/index.php
+Not Found: /view-source:
+Not Found: /misc/ajax.js
+Not Found: /autodiscover/autodiscover.json
+Not Found: /.env
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /autodiscover/autodiscover.json
+Not Found: /actuator/gateway/routes/
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /c/xpcom.common.js
+Not Found: /c/bs.common.js
+Not Found: /xpcom.common.js
+Not Found: /stalker_portal/c/xpcom.common.js
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+2023-11-25 07:35:34.955517 [UID:65534][16313] Child process with pid: 16982 was killed by signal: 15, core dumped: no
+2023-11-25 07:35:34.959770 [UID:65534][16313] Child process with pid: 16981 was killed by signal: 15, core dumped: no
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /core/.env
+Not Found: /core/.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /core/.env
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /vpn/index.html
+Not Found: /manager/html/
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /.env
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /wp-includes/ID3/license.txt
+Not Found: /feed/
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /2021/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /favicon.ico
+Not Found: /HNAP1/
+Not Found: /hudson/script/
+Not Found: /script/
+Not Found: /sqlite/main.php
+Not Found: /sqlitemanager/main.php
+Not Found: /SQLiteManager/main.php
+Not Found: /SQLite/main.php
+Not Found: /SQlite/main.php
+Not Found: /main.php
+Not Found: /test/sqlite/SQLiteManager-1.2.0/SQLiteManager-1.2.0/main.php
+Not Found: /SQLiteManager-1.2.4/main.php
+Not Found: /agSearch/SQlite/main.php
+Not Found: /phpmyadmin/
+Not Found: /phpMyAdmin/
+Not Found: /PMA/
+Not Found: /pma/
+Not Found: /dbadmin/
+Not Found: /mysql/
+Not Found: /myadmin/
+Not Found: /openserver/phpmyadmin/
+Not Found: /phpmyadmin2/
+Not Found: /phpMyAdmin2/
+Not Found: /phpMyAdmin-2/
+Not Found: /php-my-admin/
+Not Found: /phpMyAdmin-2.2.3/
+Not Found: /phpMyAdmin-2.2.6/
+Not Found: /phpMyAdmin-2.5.1/
+Not Found: /phpMyAdmin-2.5.4/
+Not Found: /phpMyAdmin-2.5.5-rc1/
+Not Found: /phpMyAdmin-2.5.5-rc2/
+Not Found: /phpMyAdmin-2.5.5/
+Not Found: /phpMyAdmin-2.5.5-pl1/
+Not Found: /phpMyAdmin-2.5.6-rc1/
+Not Found: /phpMyAdmin-2.5.6-rc2/
+Not Found: /phpMyAdmin-2.5.6/
+Not Found: /phpMyAdmin-2.5.7/
+Not Found: /phpMyAdmin-2.5.7-pl1/
+Not Found: /phpMyAdmin-2.6.0-alpha/
+Not Found: /phpMyAdmin-2.6.0-alpha2/
+Not Found: /phpMyAdmin-2.6.0-beta1/
+Not Found: /phpMyAdmin-2.6.0-beta2/
+Not Found: /phpMyAdmin-2.6.0-rc1/
+Not Found: /phpMyAdmin-2.6.0-rc2/
+Not Found: /phpMyAdmin-2.6.0-rc3/
+Not Found: /phpMyAdmin-2.6.0/
+Not Found: /phpMyAdmin-2.6.0-pl1/
+Not Found: /phpMyAdmin-2.6.0-pl2/
+Not Found: /phpMyAdmin-2.6.0-pl3/
+Not Found: /phpMyAdmin-2.6.1-rc1/
+Not Found: /phpMyAdmin-2.6.1-rc2/
+Not Found: /phpMyAdmin-2.6.1/
+Not Found: /phpMyAdmin-2.6.1-pl1/
+Not Found: /phpMyAdmin-2.6.1-pl2/
+Not Found: /phpMyAdmin-2.6.1-pl3/
+Not Found: /phpMyAdmin-2.6.2-rc1/
+Not Found: /phpMyAdmin-2.6.2-beta1/
+Not Found: /phpMyAdmin-2.6.2-rc1/
+Not Found: /phpMyAdmin-2.6.2/
+Not Found: /phpMyAdmin-2.6.2-pl1/
+Not Found: /phpMyAdmin-2.6.3/
+Not Found: /phpMyAdmin-2.6.3-rc1/
+Not Found: /phpMyAdmin-2.6.3/
+Not Found: /phpMyAdmin-2.6.3-pl1/
+Not Found: /phpMyAdmin-2.6.4-rc1/
+Not Found: /phpMyAdmin-2.6.4-pl1/
+Not Found: /phpMyAdmin-2.6.4-pl2/
+Not Found: /phpMyAdmin-2.6.4-pl3/
+Not Found: /phpMyAdmin-2.6.4-pl4/
+Not Found: /phpMyAdmin-2.6.4/
+Not Found: /phpMyAdmin-2.7.0-beta1/
+Not Found: /phpMyAdmin-2.7.0-rc1/
+Not Found: /phpMyAdmin-2.7.0-pl1/
+Not Found: /phpMyAdmin-2.7.0-pl2/
+Not Found: /phpMyAdmin-2.7.0/
+Not Found: /phpMyAdmin-2.8.0-beta1/
+Not Found: /phpMyAdmin-2.8.0-rc1/
+Not Found: /phpMyAdmin-2.8.0-rc2/
+Not Found: /phpMyAdmin-2.8.0/
+Not Found: /phpMyAdmin-2.8.0.1/
+Not Found: /phpMyAdmin-2.8.0.2/
+Not Found: /phpMyAdmin-2.8.0.3/
+Not Found: /phpMyAdmin-2.8.0.4/
+Not Found: /phpMyAdmin-2.8.1-rc1/
+Not Found: /phpMyAdmin-2.8.1/
+Not Found: /phpMyAdmin-2.8.2/
+Not Found: /sqlmanager/
+Not Found: /mysqlmanager/
+Not Found: /p/m/a/
+Not Found: /PMA2005/
+Not Found: /pma2005/
+Not Found: /phpmanager/
+Not Found: /php-myadmin/
+Not Found: /phpmy-admin/
+Not Found: /webadmin/
+Not Found: /sqlweb/
+Not Found: /websql/
+Not Found: /webdb/
+Not Found: /mysqladmin/
+Not Found: /mysql-admin/
+Not Found: /c/xpcom.common.js
+Not Found: /c/bs.common.js
+Not Found: /xpcom.common.js
+Not Found: /stalker_portal/c/xpcom.common.js
+Not Found: /favicon.ico
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /.git/config
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /administrator/index.php
+Not Found: /view-source:
+Not Found: /misc/ajax.js
+Not Found: /favicon.ico
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /.env
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /manager/html/
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+2023-11-26 16:19:12.742893 [UID:65534][15927] Child process with pid: 17133 was killed by signal: 15, core dumped: no
+2023-11-26 16:19:12.745529 [UID:65534][15927] Child process with pid: 17251 was killed by signal: 15, core dumped: no
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /geoserver/web/
+Not Found: /.well-known/assetlinks.json
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /favicon.ico
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /actuator/gateway/routes/
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2018/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /media/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /autodiscover/autodiscover.json
+Not Found: /wp-includes/ID3/license.txt
+Not Found: /feed/
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /2021/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2018/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /media/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /wp-login.php
+Not Found: /favicon.ico
+Not Found: /.env
+Not Found: /.env
+Not Found: /owa/auth/logon.aspx
+Not Found: /favicon.ico
+Not Found: /geoserver/web/
+Not Found: /.env
+Not Found: /.env
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /dns-query
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 128.199.144.189/dns-query/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Not Found: /favicon.ico
+Not Found: /.env
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /actuator/gateway/routes/
+Not Found: /favicon.ico
+Not Found: /.env
+Not Found: /.env
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /autodiscover/autodiscover.json
+Internal Server Error: /dns-query
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 128.199.144.189/dns-query/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /wp-includes/ID3/license.txt
+Not Found: /feed/
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /2021/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /owa/auth/logon.aspx
+Not Found: /.env
+Not Found: /.env
+Not Found: /.env
+Not Found: /favicon.ico
+Not Found: /geoserver/web/
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /ajax
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 128.199.144.189/ajax/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Not Found: /ab2g/
+Not Found: /ab2h/
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /wp-login.php
+Not Found: /ews/ews/
+Not Found: /ews/exchanges/
+Not Found: /ews/exchange /
+Not Found: /ews/exchange/
+Not Found: /ews/ /
+Not Found: /ews/ews/
+Not Found: /ews/autodiscovers/
+Not Found: /autodiscover/autodiscovers/
+Not Found: /autodiscover/autodiscover /
+Not Found: /autodiscover/autodiscoverrs/
+Not Found: /autodiscove/
+Not Found: /.env
+Not Found: /.env
+Not Found: /wp-admin/setup-config.php
+Not Found: /old/wp-admin/setup-config.php
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /backup/wp-admin/setup-config.php
+Not Found: /OLD/wp-admin/setup-config.php
+Not Found: /blog/wp-admin/setup-config.php
+Not Found: /wp/wp-admin/setup-config.php
+Internal Server Error: /sdk
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 128.199.144.189/sdk/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Not Found: /evox/about/
+Not Found: /HNAP1/
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /.env
+Not Found: /.git/config
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /sitemap.xml/sitemap.xml
+Not Found: /autodiscover/autodiscover.json
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /sugar_version.json
+Not Found: /solr/
+Not Found: /Telerik.Web.UI.WebResource.axd
+Not Found: /favicon.ico
+Not Found: /webfig/
+Not Found: /favicon.ico
+Not Found: /api/session/properties/
+Not Found: /static/historypage.js
+Not Found: /favicon-32x32.png
+Not Found: /cgi-bin/authLogin.cgi
+Not Found: /showLogin.cc
+Not Found: /cf_scripts/scripts/ajax/ckeditor/ckeditor.js
+Not Found: /favicon.ico
+Not Found: /.env
+Not Found: /.env
+Not Found: /favicon.ico
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /favicon.ico
+Internal Server Error: /dns-query
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 128.199.144.189/dns-query/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2018/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /media/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /autodiscove/
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /index.html
+Not Found: /OV7W8spATLJRkKCXqmeitwf6ISq/
+Not Found: /index.html
+Not Found: /+CSCOE+/logon.html
+Not Found: /+CSCOE+/logon.html
+Not Found: /cgi-bin/login.cgi
+Not Found: /cgi-bin/login.cgi
+Not Found: /logon.htm
+Not Found: /logon.htm
+Not Found: /sitemap.xml/sitemap.xml
+Not Found: /actuator/gateway/routes/
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /.env.bak
+Not Found: /favicon.ico
+Not Found: /geoserver/web/
+Not Found: /favicon.ico
+Not Found: /.env.production
+Not Found: /.git/config
+Not Found: /autodiscover/autodiscover.json
+Not Found: /cgi-bin/login.cgi
+Not Found: /cgi-bin/login.cgi
+Not Found: /por/login_psw.csp
+Not Found: /ui/login.php
+Not Found: /.env
+Not Found: /.env.dev
+Not Found: /js/NewWindow_2_all.js
+Not Found: /.env.production
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Forbidden (CSRF cookie not set.): /admin/settings/coderedcms/layoutsettings/2/
+Forbidden (CSRF cookie not set.): /admin/settings/coderedcms/layoutsettings/2/
+Not Found: /login/
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /.env
+Not Found: /.env.production.local
+Not Found: /.env
+Not Found: /autodiscover/autodiscover.json
+Not Found: /.env
+Not Found: /.env.www
+Not Found: /.git/config
+Not Found: /.env.production.local
+Not Found: /sitemap.xml/sitemap.xml
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'coderedcms_version'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/defaulttags.py", line 968, in do_if
+    nodelist = parser.parse(("endif",))
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'coderedcms_version', expected 'endif'. Did you forget to register or load this tag?
+Not Found: /.env
+Not Found: /.env
+Not Found: /api/.env
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /static/website/css/patidina.css
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /.env
+Not Found: /.env
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /cf_scripts/scripts/ajax/ckeditor/ckeditor.js
+Not Found: /wp-includes/ID3/license.txt
+Not Found: /feed/
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /2021/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /js/NewWindow_2_all.js
+Not Found: /cf_scripts/scripts/ajax/ckeditor/ckeditor.js
+Not Found: /actuator/gateway/routes/
+Not Found: /cf_scripts/scripts/ajax/ckeditor/ckeditor.js
+Not Found: /geoserver/web/
+Internal Server Error: /dns-query
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 128.199.144.189/dns-query/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/mysite/mysite/wsgi.py", line 20, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/apps/registry.py", line 83, in populate
+    raise RuntimeError("populate() isn't reentrant")
+RuntimeError: populate() isn't reentrant
+2023-12-01 19:42:59.739219 [UID:65534][84689] packetLen < 0
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2018/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /media/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /cf_scripts/scripts/ajax/ckeditor/ckeditor.js
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /core/.env
+Not Found: /core/.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /core/.env
+Not Found: /sitemap.xml/sitemap.xml
+Not Found: /.well-known/security.txt
+Internal Server Error: /FD873AC4-CF86-4FED-84EC-4BD59C6F17A7
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 128.199.144.189/FD873AC4-CF86-4FED-84EC-4BD59C6F17A7/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Not Found: /wp-includes/ID3/license.txt
+Not Found: /feed/
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /2021/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /solr/
+Not Found: /favicon-32x32.png
+Not Found: /Telerik.Web.UI.WebResource.axd
+Not Found: /sugar_version.json
+Not Found: /webfig/
+Not Found: /cgi-bin/authLogin.cgi
+Not Found: /api/session/properties/
+Not Found: /showLogin.cc
+Not Found: /cf_scripts/scripts/ajax/ckeditor/ckeditor.js
+Not Found: /static/historypage.js
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /autodiscover/autodiscover.json
+Not Found: /.env
+Not Found: /%s
+Not Found: /autodiscover/autodiscover.json
+Not Found: /.DS_Store
+Not Found: /index.html
+Not Found: /index.html
+Not Found: /+CSCOE+/logon.html
+Not Found: /+CSCOE+/logon.html
+Not Found: /cgi-bin/login.cgi
+Not Found: /cgi-bin/login.cgi
+Not Found: /logon.htm
+Not Found: /logon.htm
+Not Found: /login.jsp
+Not Found: /login.jsp
+Not Found: /geoserver/web/
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+2023-12-02 17:11:46.517706 [UID:65534][101296] Child process with pid: 101689 was killed by signal: 15, core dumped: no
+2023-12-02 17:11:46.517749 [UID:65534][101296] Child process with pid: 101690 was killed by signal: 15, core dumped: no
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /.env
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /.env
+Not Found: /owa/auth/logon.aspx
+Not Found: /.env
+Not Found: /.env
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /.env
+Not Found: /.env
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /autodiscover/autodiscover.json
+Not Found: /wp-includes/ID3/license.txt
+Not Found: /feed/
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /2021/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /actuator/gateway/routes/
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /index.php
+Not Found: /index.php
+Not Found: /index.php
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /epa/scripts/win/nsepa_setup.exe
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /dpf/
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /geoserver/web/
+Forbidden (Referer checking failed - no Referer.): /
+Internal Server Error: /query
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 128.199.144.189/query/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /resolve
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 128.199.144.189/resolve/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /admin/bulk/coderedcms/classifier/delete/
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /.well-known/security.txt
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /solr/
+Not Found: /sugar_version.json
+Not Found: /cf_scripts/scripts/ajax/ckeditor/ckeditor.js
+Not Found: /remote/login/
+Not Found: /cgi-bin/config.exp
+Not Found: /cgi-bin/authLogin.cgi
+Not Found: /owa/
+Not Found: /autodiscover/autodiscover.json
+Not Found: /showLogin.cc
+Not Found: /Telerik.Web.UI.WebResource.axd
+Not Found: /webfig/
+Not Found: /api/session/properties/
+Not Found: /favicon-32x32.png
+Not Found: /static/historypage.js
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /cgi-bin/luci/
+Not Found: /login/
+Not Found: /sftp-config.json
+Not Found: /.vscode/sftp.json
+Not Found: /.vscode/ftp-sync.json
+Not Found: /.env
+Not Found: /ftp-sync.json
+Not Found: /.vscode/sftp-config.json
+Not Found: /.env
+Not Found: /wp-login.php
+Not Found: /blog/wp-login.php
+Not Found: /blog/
+Not Found: /administrator/
+Not Found: /user/
+Not Found: /user/login/
+Not Found: /admin.php
+Not Found: /manager/
+Not Found: /.env
+Not Found: /geoserver/web/
+Not Found: /sitemap.xml/sitemap.xml
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/mysite/mysite/wsgi.py", line 20, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/apps/registry.py", line 83, in populate
+    raise RuntimeError("populate() isn't reentrant")
+RuntimeError: populate() isn't reentrant
+2023-12-04 10:13:08.922428 [UID:65534][45356] packetLen < 0
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /.env
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/mysite/mysite/wsgi.py", line 20, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/apps/registry.py", line 83, in populate
+    raise RuntimeError("populate() isn't reentrant")
+RuntimeError: populate() isn't reentrant
+2023-12-04 13:37:42.801259 [UID:65534][49482] packetLen < 0
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /actuator/gateway/routes/
+Not Found: /tool/log/c.php
+Not Found: /backup/auto.php
+Not Found: /jshERP-boot/user/getAllList;.ico
+Not Found: /s=set&_method=__construct&method=*&filter[]=system
+Not Found: /get_dkey.php
+Not Found: /include/thumb.php
+Not Found: /public/index.php
+Not Found: /e/ViewImg/index.html
+Not Found: /install/
+Not Found: /web/xml/webuser-auth.xml
+Not Found: /upgrade/detail.jsp/login/LoginSSO.jsp
+Not Found: /view/action/download_file.php
+Not Found: /webui/
+Not Found: /bsh.servlet.BshServlet
+Forbidden (Referer checking failed - no Referer.): /webadm/
+Not Found: /.env
+Not Found: /.env
+Not Found: /humans.txt
+Not Found: /ads.txt
+Not Found: /.git/config
+Not Found: /config.json
+Not Found: /.env
+Not Found: /info.php
+Not Found: /autodiscover/autodiscover.json
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /bicomposer/
+Not Found: /index.php
+Not Found: /index.php
+Not Found: /index.php
+Not Found: /em/
+Not Found: /sitemap.xml/sitemap.xml
+Not Found: /ews/exchanges/
+Not Found: /ews/exchange /
+Not Found: /ews/exchange/
+Not Found: /ews/ /
+Not Found: /ews/ews/
+Not Found: /ews/autodiscovers/
+Not Found: /autodiscover/autodiscovers/
+Not Found: /autodiscover/autodiscover /
+Not Found: /autodiscover/autodiscoverrs/
+Not Found: /autodiscove/
+Not Found: /dpf/pajjhamala-1/
+Not Found: /dpf/pajhamala-1/
+Not Found: /dpf/pajjamala-1/
+Not Found: /dpf/pajhamala-1/
+Not Found: /phpmyadmin/index.php
+Not Found: /WhIvXQCFqiNnT3SLBrJZwtK4xHn/
+Not Found: /geoserver/web/
+Not Found: /actuator/gateway/routes/
+Internal Server Error: /ajax
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 128.199.144.189/ajax/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Not Found: /soa/composer/
+Not Found: /.env
+Not Found: /ab2g/
+Not Found: /ab2h/
+Not Found: /psKkGEt14LDquPJT5mNaz3rgvFg/
+Not Found: /autodiscover/autodiscover.json
+Not Found: /dpf/pajjamala-1/
+Not Found: /sitemap.xml/sitemap.xml
+Not Found: /cluster/cluster/
+Not Found: /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+Not Found: /geoserver/web/
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /index.html
+Not Found: /index.html
+Not Found: /+CSCOE+/logon.html
+Not Found: /+CSCOE+/logon.html
+Not Found: /cgi-bin/login.cgi
+Not Found: /cgi-bin/login.cgi
+Not Found: /logon.htm
+Not Found: /logon.htm
+Not Found: /login.jsp
+Not Found: /login.jsp
+Not Found: /wp-admin/setup-config.php
+Not Found: /wp-admin/install.php
+Not Found: /wp/wp-admin/setup-config.php
+Not Found: /wp/wp-admin/install.php
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /wordpress/wp-admin/install.php
+Not Found: /old/wp-admin/setup-config.php
+Not Found: /old/wp-admin/install.php
+Not Found: /blog/wp-admin/setup-config.php
+Not Found: /blog/wp-admin/install.php
+Not Found: /demo/wp-admin/setup-config.php
+Not Found: /demo/wp-admin/install.php
+Not Found: /backup/wp-admin/setup-config.php
+Not Found: /backup/wp-admin/install.php
+Not Found: /test/wp-admin/setup-config.php
+Not Found: /test/wp-admin/install.php
+Not Found: /.env
+Not Found: /.env
+Not Found: /sitemap.xml/sitemap.xml
+Not Found: /owa/auth/logon.aspx
+Not Found: /api/v2/cmdb/system/admin/
+Not Found: /autodiscover/autodiscover.json
+Not Found: /wp-login.php
+Not Found: /actuator/gateway/routes/
+Not Found: /ab2g/
+Not Found: /ab2h/
+Not Found: /em/
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /soa/composer/
+Not Found: /autodiscover/autodiscover.json
+Not Found: /sitemap.xml/sitemap.xml
+Not Found: /geoserver/web/
+Not Found: /cluster/cluster/
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+2023-12-07 18:39:54.141603 [UID:65534][5374] Child process with pid: 5661 was killed by signal: 15, core dumped: no
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/admin/snippets/utils/moonphasecreatorform/edit/1/
+Internal Server Error: /admin/snippets/utils/moonphasecreatorform/edit/1/
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/urls/__init__.py", line 173, in wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/auth.py", line 165, in decorated_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/permissions.py", line 32, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/mixins.py", line 91, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/mixins.py", line 692, in post
+    return self.form_valid(form)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/mixins.py", line 559, in form_valid
+    self.object = self.save_instance()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/mixins.py", line 483, in save_instance
+    instance = self.form.save()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/modelcluster/forms.py", line 375, in save
+    instance = super().save(commit=(commit and not save_m2m_now))
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/forms/models.py", line 548, in save
+    self.instance.save()
+  File "/usr/local/lsws/Example/html/mysite/utils/models.py", line 38, in save
+    calculate_moon_phase(date_str, before_date, after_date)
+  File "/usr/local/lsws/Example/html/mysite/utils/moon.py", line 35, in calculate_moon_phase
+    calculate_and_draw_moon_phase_for_date(current_date, moonpath)
+  File "/usr/local/lsws/Example/html/mysite/utils/moon.py", line 53, in calculate_and_draw_moon_phase_for_date
+    draw_moon_phase(moonpath, phasepath, phase)
+  File "/usr/local/lsws/Example/html/mysite/utils/moon.py", line 105, in draw_moon_phase
+    img.save(filename=phasepath)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wand/image.py", line 10214, in save
+    self.raise_exception()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wand/resource.py", line 225, in raise_exception
+    raise e
+wand.exceptions.CoderError: WriteBlob Failed `/usr/local/lsws/Example/html/mysite/static/utils/moon/20231202.png' @ error/png.c/MagickPNGErrorHandler/1642
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /static/utils/moon/.png
+Not Found: /static/utils/moon/.png
+Not Found: /static/utils/moon/.png
+Not Found: /static/utils/moon/.png
+Not Found: /sitemap.xml/sitemap.xml
+Not Found: /static/utils/moon/2023-12-07.png
+Not Found: /static/utils/moon/2023-12-07.png
+Not Found: /static/utils/moon/2023-12-07.png
+Not Found: /static/utils/moon/2023-12-07.png
+Not Found: /static/utils/moon/2023-12-07.png
+Not Found: /static/utils/moon/2023-12-07.png
+Not Found: /static/utils/moon/2023-12-07.png
+Not Found: /static/utils/moon/2023-12-07.png
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /static/utils/moon/2023-12-07.png
+Not Found: /wp-login.php
+Not Found: /static/utils/moon/2023-12-07.png
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Internal Server Error: /admin/snippets/utils/moonphasecreatorform/edit/1/
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/urls/__init__.py", line 173, in wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/auth.py", line 165, in decorated_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/permissions.py", line 32, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/mixins.py", line 91, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/mixins.py", line 692, in post
+    return self.form_valid(form)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/mixins.py", line 559, in form_valid
+    self.object = self.save_instance()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/mixins.py", line 483, in save_instance
+    instance = self.form.save()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/modelcluster/forms.py", line 375, in save
+    instance = super().save(commit=(commit and not save_m2m_now))
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/forms/models.py", line 548, in save
+    self.instance.save()
+  File "/usr/local/lsws/Example/html/mysite/utils/models.py", line 41, in save
+    calculate_moon_phase(date_str, before_date, after_date)
+  File "/usr/local/lsws/Example/html/mysite/utils/moon.py", line 40, in calculate_moon_phase
+    calculate_and_draw_moon_phase_for_date(current_date, moonpath)
+  File "/usr/local/lsws/Example/html/mysite/utils/moon.py", line 61, in calculate_and_draw_moon_phase_for_date
+    draw_moon_phase(moonpath, phasepath, phase)
+  File "/usr/local/lsws/Example/html/mysite/utils/moon.py", line 109, in draw_moon_phase
+    img.save(filename=phasepath)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wand/image.py", line 10214, in save
+    self.raise_exception()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wand/resource.py", line 225, in raise_exception
+    raise e
+wand.exceptions.CoderError: WriteBlob Failed `/usr/local/lsws/Example/html/mysite/utils/static/utils/moon/2023-12-02.png' @ error/png.c/MagickPNGErrorHandler/1642
+Internal Server Error: /admin/snippets/utils/moonphasecreatorform/edit/1/
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/urls/__init__.py", line 173, in wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/auth.py", line 165, in decorated_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/permissions.py", line 32, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/mixins.py", line 91, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/mixins.py", line 692, in post
+    return self.form_valid(form)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/mixins.py", line 559, in form_valid
+    self.object = self.save_instance()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/mixins.py", line 483, in save_instance
+    instance = self.form.save()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/modelcluster/forms.py", line 375, in save
+    instance = super().save(commit=(commit and not save_m2m_now))
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/forms/models.py", line 548, in save
+    self.instance.save()
+  File "/usr/local/lsws/Example/html/mysite/utils/models.py", line 41, in save
+    calculate_moon_phase(date_str, before_date, after_date)
+  File "/usr/local/lsws/Example/html/mysite/utils/moon.py", line 40, in calculate_moon_phase
+    calculate_and_draw_moon_phase_for_date(current_date, moonpath)
+  File "/usr/local/lsws/Example/html/mysite/utils/moon.py", line 61, in calculate_and_draw_moon_phase_for_date
+    draw_moon_phase(moonpath, phasepath, phase)
+  File "/usr/local/lsws/Example/html/mysite/utils/moon.py", line 109, in draw_moon_phase
+    img.save(filename=phasepath)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wand/image.py", line 10214, in save
+    self.raise_exception()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wand/resource.py", line 225, in raise_exception
+    raise e
+wand.exceptions.CoderError: WriteBlob Failed `/usr/local/lsws/Example/html/mysite/utils/static/utils/moon/2023-12-02.png' @ error/png.c/MagickPNGErrorHandler/1642
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Internal Server Error: /admin/snippets/utils/moonphasecreatorform/edit/1/
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/urls/__init__.py", line 173, in wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/auth.py", line 165, in decorated_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/permissions.py", line 32, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/mixins.py", line 91, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/mixins.py", line 692, in post
+    return self.form_valid(form)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/mixins.py", line 559, in form_valid
+    self.object = self.save_instance()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/views/generic/mixins.py", line 483, in save_instance
+    instance = self.form.save()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/modelcluster/forms.py", line 375, in save
+    instance = super().save(commit=(commit and not save_m2m_now))
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/forms/models.py", line 548, in save
+    self.instance.save()
+  File "/usr/local/lsws/Example/html/mysite/utils/models.py", line 41, in save
+    calculate_moon_phase(date_str, before_date, after_date)
+  File "/usr/local/lsws/Example/html/mysite/utils/moon.py", line 40, in calculate_moon_phase
+    current_date = start_date
+  File "/usr/local/lsws/Example/html/mysite/utils/moon.py", line 61, in calculate_and_draw_moon_phase_for_date
+  File "/usr/local/lsws/Example/html/mysite/utils/moon.py", line 109, in draw_moon_phase
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wand/image.py", line 10214, in save
+    self.raise_exception()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wand/resource.py", line 225, in raise_exception
+    raise e
+wand.exceptions.CoderError: WriteBlob Failed `/usr/local/lsws/Example/html/mysite/utils/static/utils/moon/2023-12-06.png' @ error/png.c/MagickPNGErrorHandler/1642
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+2023-12-08 07:00:44.344341 [UID:65534][38579] Child process with pid: 40025 was killed by signal: 15, core dumped: no
+2023-12-08 07:00:44.350850 [UID:65534][38579] Child process with pid: 40012 was killed by signal: 15, core dumped: no
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+2023-12-08 07:04:38.539336 [UID:65534][798] Child process with pid: 1495 was killed by signal: 15, core dumped: no
+2023-12-08 07:04:38.545124 [UID:65534][798] Child process with pid: 1494 was killed by signal: 15, core dumped: no
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Not Found: /static/utils/moon/2023-12-08.png
+Not Found: /geoserver/web/
+Not Found: /.git/config
+Not Found: /autodiscover/autodiscover.json
+Not Found: /.well-known/security.txt

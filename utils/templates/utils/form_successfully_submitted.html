@@ -1,0 +1,15 @@
+{% extends "coderedcms/pages/base.html" %}
+{% load i18n bootstrap_icons %}
+
+{% block content %} 
+    <div class="d-flex align-items-center justify-content-center vh-100">
+        <div class="text-center">
+            {% bs_icon 'info-circle' size='5em' extra_classes='text-primary' %}
+            <p class="fs-3"> <span class="text-danger">{% trans 'Look!' %}</span> {% trans "You've got message" %}</p>
+            <p class="lead">
+                {% trans 'The form has been successfully submitted.' %}
+            </p>
+            <a href="#" onclick="goBack()" class="btn btn-primary">{% trans 'Go Back' %}</a>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,44 @@
+/* image.scss */
+
+/* Class สำหรับกำหนดความกว้างของรูปภาพ */
+.img-width-100 {
+    width: 100px;
+  }
+  
+  .img-width-150 {
+    width: 150px !important;
+  }
+  
+  .img-width-250 {
+    width: 250px;
+  }
+  
+  /* Class สำหรับกำหนดความสูงของรูปภาพ */
+  .img-height-100 {
+    height: 100px;
+  }
+  
+  .img-height-150 {
+    height: 150px;
+  }
+  
+  .img-height-250 {
+    height: 250px;
+  }
+  
+  /* Class สำหรับกำหนดทั้งความกว้างและความสูงของรูปภาพ */
+  .img-size-100 {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  
+  .img-size-150 {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  
+  .img-size-250 {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  

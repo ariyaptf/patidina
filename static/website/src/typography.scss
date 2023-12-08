@@ -1,0 +1,17 @@
+/* นิยามพื้นฐานของ class .hero-lead */
+.hero-lead {
+    font-size: 9px; /* ค่าเริ่มต้นสำหรับหน้าจอขนาดเล็ก */
+    font-weight:lighter;
+    line-height: 1.4;
+    color:darkred;
+}
+
+/* เปลี่ยนขนาดตัวอักษรเมื่อหน้าจอมีขนาด 576px ขึ้นไป */
+@media (min-width: 576px) {
+    .hero-lead {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.6;
+        color:darkred;
+    }
+}

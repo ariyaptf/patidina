@@ -1,0 +1,95 @@
+{% extends "coderedcms/pages/base.html" %}
+{% load wagtailcore_tags wagtailimages_tags utils_tags today_message_tags static %}
+
+{% block content %}
+    <div class="parallax" style="background-image: url('{{ background_image_url }}');">
+        
+        <div class="container mx-auto py-2" style="max-width:600px !important">
+            <div class="row">
+                <div class="col d-flex justify-content-center align-items-center pb-3">
+                    <span class="display-4">{{ th_zodiac }}</span>
+                </div>                
+            </div>
+
+            <div class="row">
+                <!-- คอลัมน์ซ้าย จัดให้กึ่งกลาง -->
+                <div class="col d-flex justify-content-center align-items-center">
+                    {% format_lunar_date lunar_date %}
+                </div>
+        
+                <!-- คอลัมน์กลาง จัดให้กึ่งกลาง -->
+                <div class="col d-flex justify-content-center align-items-center">
+                    <img src="{% static 'utils/moon/' %}{{ date_str }}.png" alt="Moon Phase" class="w-100" style="transform: rotate(240deg);">
+                </div>
+        
+                <!-- คอลัมน์ขวา จัดให้กึ่งกลาง -->
+                <div class="col d-flex justify-content-center align-items-center">
+                    {% format_solar_date solar_date %}
+                </div>
+            </div>
+        </div>
+        
+        <article class="crx-article text-dark lead px-3">
+
+            <div class="container pt-5 text-center">
+                <h1 class="pb-4">{{ self.title }}</h1>
+
+                {% for block in page.body %}
+                    {% include_block block with settings=settings %}
+                {% endfor %}
+            </div>
+
+            {% block article_header %}
+                <div class="container text-center">
+                    <h2>{{daily_quote.classifier_terms.get.name}}</h2>
+
+                    {% get_image_by_name "default_line" as default_line_image %}
+                    {% if default_line_image %}
+                        {% image default_line_image original as img %}
+                        <img src="{{ img.url }}" alt="Your Image Description" class="w-75">
+                    {% endif %}
+
+                    <h3 class="pt-3">{{ daily_quote.title }}</h3>
+                    
+                    {% if daily_quote.caption %}
+                        {% if daily_quote.seo_author %}
+                            <span class="mx-2">❀</span>
+                            <span class="article-author">{{ daily_quote.seo_author }}</span>
+                            <span class="mx-2">❀</span>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            {% endblock %}
+
+            {% block article_body %}
+                <div class="container mx-auto py-5 article-body" style="max-width:400px !important">
+                    {% for poetry in daily_quote.poetry %}
+                        {% include_block poetry with settings=settings %}
+                    {% endfor %}
+
+                    {% for block in daily_quote.body %}
+                        {% include_block block with settings=settings %}
+                    {% endfor %}
+                </div>
+            {% endblock %}
+
+        </article>
+
+        <calendar>
+        </calendar>
+
+        <event>
+        </event>
+    </div>
+{% endblock %}
+
+{% block custom_scripts %}
+    <script>
+        window.addEventListener('scroll', function() {
+            var parallax = document.querySelector('.parallax');
+            var scrollPosition = window.pageYOffset;
+            
+            parallax.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
+        });    
+    </script>
+{% endblock %}

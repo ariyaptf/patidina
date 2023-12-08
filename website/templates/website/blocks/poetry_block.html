@@ -1,0 +1,12 @@
+<div class="poetry-wrapper">
+    <div class="poetry-container {% if self.settings.custom_css_class %}{{ self.settings.custom_css_class }}{% endif %}">
+        {% for stanza in self.stanzas %}
+            <div class="stanza {% if stanza.poetry_layout == 'double_columns' %}two-columns{% endif %}">
+                {% for verse in stanza.verses %}
+                    <div class="line">{{ verse.verse }}</div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
