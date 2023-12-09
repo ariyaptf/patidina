@@ -2,6 +2,11 @@ import ephem
 import glob
 import math
 import os
+import pylunar
+
+from skyfield.api import load, Topos
+from skyfield.trigonometry import position_angle_of
+
 from datetime import datetime, timedelta
 from wand.image import Image
 from wand.drawing import Drawing
@@ -42,11 +47,9 @@ def calculate_moon_phase(date_str=None, before_date_str=None, after_date_str=Non
         calculate_and_draw_moon_phase_for_date(current_date, moonpath)
         current_date += timedelta(days=1)
 
+
 def calculate_and_draw_moon_phase_for_date(date, moonpath):
     observer = ephem.Observer()
-    # ตั้งค่าสถานที่เป็นกรุงเทพฯ, ประเทศไทย
-    observer.lat = '13.7563'  # Latitude สำหรับกรุงเทพฯ
-    observer.lon = '100.5018'  # Longitude สำหรับกรุงเทพฯ
     observer.date = date
 
     # สร้างชื่อไฟล์ตามวันที่
@@ -62,6 +65,14 @@ def calculate_and_draw_moon_phase_for_date(date, moonpath):
         phase = -phase
 
     draw_moon_phase(moonpath, phasepath, phase)
+
+
+def decimal_to_deg_min_sec(decimal_value):
+    degrees = int(decimal_value)
+    minutes_with_decimal = (decimal_value - degrees) * 60
+    minutes = int(minutes_with_decimal)
+    seconds = (minutes_with_decimal - minutes) * 60
+    return degrees, minutes, seconds
 
 
 def delete_files_except(directory, except_file):

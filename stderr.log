@@ -2317,3 +2317,46 @@ Not Found: /geoserver/web/
 Not Found: /.git/config
 Not Found: /autodiscover/autodiscover.json
 Not Found: /.well-known/security.txt
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/mysite/mysite/wsgi.py", line 20, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/apps/registry.py", line 83, in populate
+    raise RuntimeError("populate() isn't reentrant")
+RuntimeError: populate() isn't reentrant
+2023-12-08 17:20:01.889537 [UID:65534][16426] packetLen < 0
+Not Found: /.env
+Not Found: /ZPhJ/
+Not Found: /9Eez/
+Not Found: /aab8/
+Not Found: /jquery-3.3.1.slim.min.js
+Not Found: /aab9/
+Not Found: /jquery-3.3.2.slim.min.js
+Not Found: /wp-admin/setup-config.php
+Not Found: /old/wp-admin/setup-config.php
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /backup/wp-admin/setup-config.php
+Not Found: /OLD/wp-admin/setup-config.php
+Not Found: /sitemap.xml/sitemap.xml
+Not Found: /.env
+Not Found: /sitemap.xml/sitemap.xml
+Not Found: /.well-known/security.txt
+Not Found: /.git/config
+Not Found: /wp-includes/ID3/license.txt
+Not Found: /feed/
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /2021/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml

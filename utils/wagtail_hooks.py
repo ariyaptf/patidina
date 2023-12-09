@@ -10,5 +10,4 @@ def redirect_to_edit_if_exists(request, model):
         instance = MoonPhaseCreatorForm.objects.first()
         # ใช้ URL โดยตรง
         url = f'/admin/snippets/utils/moonphasecreatorform/edit/{instance.pk}/'
-        print(url)
         return HttpResponseRedirect(url)

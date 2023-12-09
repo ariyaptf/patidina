@@ -37,6 +37,7 @@ from utils.calendar import (
     era
 )
 
+
 class ArticlePage(CoderedArticlePage):
     """
     Article, suitable for news or blog content.
@@ -205,22 +206,28 @@ class TodayMessagePage(CoderedWebPage):
 
     def get_context(self, request, *args, **kwargs):
         context = super().get_context(request, *args, **kwargs)
+        now = datetime.now()
 
         # รับวันที่ปัจจุบันและแปลงเป็นรูปแบบที่ต้องการ
-        date_str = timezone.now().strftime('%Y-%m-%d')
-        # เพิ่มวันที่ในรูปแบบที่ต้องการลงใน context
+        date_str = now.strftime('%Y-%m-%d')
+        # เพิ่มวันที่ในรูปแบบที่เพื่อเปิดรูป
         context['date_str'] = date_str
         # ภาพ random พื้นหลัง
         context['background_image_url'] = self.get_random_background_image_url()
         # บทความสั้นประจำวัน
         context['daily_quote'] = self.get_daily_quote()
         # ปฏิทินสุริยคติ
-        context['solar_date'] = datetime.now()
+        context['solar_date'] = now
         # ปฏิทินจันทรคติ
-        context['lunar_date'] = th_lunar_date(datetime.now())
-        # ราศีปีไทย
-        context['th_zodiac'] = th_zodiac(datetime.now())
-        
+        context['lunar_date'] = th_lunar_date(now)
+        # ตำแหน่งสังเกตุดวงจันทร์
+        lat = self.seo_struct_org_dict.get('geo')['latitude']
+        lon = self.seo_struct_org_dict.get('geo')['longitude']
+        # ศักราช และปีนักษัตร
+        context['BE'] = era(now, output_type=1)
+        context['th_zodiac'] = th_zodiac(now)
+        context['th_zodiac_no'] = th_zodiac(now, output_type=3)
+        context['CE'] = era(now, output_type=5)
         
         return context
 
