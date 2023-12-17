@@ -1,0 +1,60 @@
+{% load static today_message_tags %}
+
+<div class="row pt-3">
+    <!-- คอลัมน์ 1 -->
+    <div class="col d-flex justify-content-center align-items-center">
+        <img src="{% static 'utils/moon/' %}{{ moon_1 }}" alt="Moon Phase" class="w-25 ms-2 me-2 {{ uposatha_1.ld|moonlight_glow }}">
+        <span><sup>{{ uposatha_1.sd.day }}</sup>/<sub>{{ uposatha_1.sd.month }}</sub></span>
+    </div>
+
+    <!-- คอลัมน์ 2 -->
+    <div class="col d-flex justify-content-center align-items-center">
+        <img src="{% static 'utils/moon/' %}{{ moon_2 }}" alt="Moon Phase" class="w-25 ms-2 me-2 {{ uposatha_2.ld|moonlight_glow }}">
+        <span><sup>{{ uposatha_2.sd.day }}</sup>/<sub>{{ uposatha_2.sd.month }}</sub></span>
+    </div>
+
+    <!-- คอลัมน์ 3 -->
+    <div class="col d-flex justify-content-center align-items-center" style="50px !important;">
+        <img src="{% static 'website/img/zodiac/icon/' %}{{ th_zodiac_no }}.png" alt="zodiac" class="w-100">
+    </div>
+
+    <!-- คอลัมน์ 4 -->
+    <div class="col d-flex justify-content-center align-items-center">
+        <img src="{% static 'utils/moon/' %}{{ moon_3 }}" alt="Moon Phase" class="w-25 ms-2 me-2 {{ uposatha_3.ld|moonlight_glow }}">
+        <span><sup>{{ uposatha_3.sd.day }}</sup>/<sub>{{ uposatha_3.sd.month }}</sub></span>
+    </div>
+
+    <!-- คอลัมน์ 5 -->
+    <div class="col d-flex justify-content-center align-items-center">
+        <img src="{% static 'utils/moon/' %}{{ moon_4 }}" alt="Moon Phase" class="w-25 ms-2 me-2 {{ uposatha_4.ld|moonlight_glow }}">
+        <span><sup>{{ uposatha_4.sd.day }}</sup>/<sub>{{ uposatha_4.sd.month }}</sub></span>
+    </div>
+</div>
+
+<div class="row pb-2" style="margin-top: -15px;">
+    <!-- คอลัมน์ 1 -->
+    <div class="col d-flex justify-content-center align-items-center">
+        {{ uposatha_1.ld|moon_phase }}
+    </div>
+
+    <!-- คอลัมน์ 2 -->
+    <div class="col d-flex justify-content-center align-items-center">
+        {{ uposatha_2.ld|moon_phase }}
+    </div>
+
+    <!-- คอลัมน์ 3 -->
+    <div class="col d-flex justify-content-center align-items-center" style="50px !important;">
+    </div>
+
+    <!-- คอลัมน์ 4 -->
+    <div class="col d-flex justify-content-center align-items-center">
+        {{ uposatha_3.ld|moon_phase }}
+    </div>
+
+    <!-- คอลัมน์ 5 -->
+    <div class="col d-flex justify-content-center align-items-center">
+        {{ uposatha_4.ld|moon_phase }}
+    </div>
+</div>
+
+

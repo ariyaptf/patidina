@@ -1,0 +1,34 @@
+{% if lunar_important_days or solar_important_days %}
+    <div class="text-center">
+        <p class="lead">วันนี้เป็นวันสำคัญ</p>
+        {% for day in lunar_important_days %}
+            {% for detail in day.lunar_calendar_details.all %}
+                <p class='text-primary'>
+                    {% if detail.article_page %}
+                        <a href='{{ detail.article_page.url }}' style='text-decoration:none'>
+                            {{ detail.name }}
+                        </a>
+                    {% else %}
+                        {{ detail.name }}
+                    {% endif %}
+                </p>
+                <!-- แสดงข้อมูลอื่นๆ จาก detail ตามที่ต้องการ -->
+            {% endfor %}
+        {% endfor %}
+
+        {% for day in solar_important_days %}
+            {% for detail in day.solar_calendar_details.all %}
+                <p class='text-primary'>
+                    {% if detail.article_page %}
+                        <a href='{{ detail.article_page.url }}' style='text-decoration:none'>
+                            {{ detail.name }}
+                        </a>
+                    {% else %}
+                        {{ detail.name }}
+                    {% endif %}
+                </p>
+                <!-- แสดงข้อมูลอื่นๆ จาก detail ตามที่ต้องการ -->
+            {% endfor %}
+        {% endfor %}
+    </div>
+{% endif %}

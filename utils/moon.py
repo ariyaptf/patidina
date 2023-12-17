@@ -26,9 +26,10 @@ def calculate_moon_phase(date_str=None, before_date_str=None, after_date_str=Non
 
     # ตรวจสอบและตั้งค่าวันที่
     if date_str:
-        date = datetime.strptime(date_str, '%Y-%m-%d')
+        date_time_obj = datetime.strptime(date_str, '%Y-%m-%d')
+        date = date_time_obj.date()
     else:
-        date = datetime.now()
+        date = datetime.now().date()
 
     # คำนวณวันที่ก่อนหน้าและหลังจากตามที่ระบุ
     before_days = int(before_date_str) if before_date_str else 0
@@ -137,4 +138,28 @@ def next_full_moon(date_str=None):
     fullmoon = dtlocal.strftime('%Y-%m-%d')
 
     return fullmoon
+
+
+def convert_float_to_dms(coordinate):
+    """
+    Convert a float coordinate (latitude or longitude) to degrees, minutes, and seconds (DMS).
+
+    Args:
+    coordinate (float): The coordinate to convert.
+
+    Returns:
+    tuple: A tuple representing the coordinate in degrees, minutes, and seconds.
+    """
+    # Degrees are the whole number part of the coordinate
+    degrees = int(coordinate)
+
+    # Minutes are the fractional part of the coordinate times 60
+    minutes_full = abs(coordinate - degrees) * 60
+    minutes = int(minutes_full)
+
+    # Seconds are the fractional part of the minutes times 60
+    seconds = int((minutes_full - minutes) * 60)
+
+    return (degrees, minutes, seconds)
+
 

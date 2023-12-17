@@ -1,57 +1,95 @@
 {% extends "coderedcms/pages/base.html" %}
-{% load wagtailcore_tags wagtailimages_tags utils_tags today_message_tags static %}
+{% load wagtailcore_tags wagtailimages_tags utils_tags today_message_tags coderedcms_tags static %}
+
+{% block extra_head %}
+    <style>
+        .accordion-item {
+            background-color: transparent;
+        }
+        .accordion-button {
+            max-width: 50px; /* หรือขนาดที่ต้องการ */
+            height: 50px; /* หรือขนาดที่ต้องการ */
+            opacity:  0.4;
+            border: none; /* ลบเส้นขอบ */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .accordion-header {
+            justify-content: center; /* จัดกลางปุ่มใน header */
+            display: flex;
+        }
+    </style>
+{% endblock %}
 
 {% block content %}
     <div class="parallax" style="background-image: url('{{ background_image_url }}');">
-        
-        <div class="container mx-auto py-2 bg-light bg-gradient-light bg-opacity-75 text-seconary" style="max-width:600px !important">
-            <div class="row">
-                <div class="col d-flex justify-content-center align-items-center pb-3">
-                    <span class="display-4">{{ th_zodiac_no }}</span>
-                </div>                
-            </div>
+
+        <!-- top calendar -->
+        <div class="container pt-4 pb-2 text-white"
+            style="max-width:600px !important;
+               border-bottom-left-radius: 2rem; border-bottom-right-radius: 2rem;
+               background-image: url('{{ background_image_for_title }}');
+               background-size: cover;     /* ทำให้รูปภาพครอบคลุมพื้นที่ทั้งหมด */
+               background-position: center; /* ตำแหน่งของรูปภาพอยู่ตรงกลาง */
+               background-repeat: no-repeat; /* ไม่ทำซ้ำรูปภาพ */">
+
 
             <div class="row">
                 <!-- คอลัมน์ซ้าย จัดให้กึ่งกลาง -->
                 <div class="col d-flex justify-content-center align-items-center">
-                    {% format_lunar_date lunar_date %}
+                    {% format_lunar_date lunar_date BE %}
                 </div>
-        
+
                 <!-- คอลัมน์กลาง จัดให้กึ่งกลาง -->
                 <div class="col d-flex justify-content-center align-items-center">
                     <img src="{% static 'utils/moon/' %}{{ date_str }}.png"
-                        alt="Moon Phase" class="w-100">
+                        alt="Moon Phase" class="w-100 {{ lunar_date|moonlight_glow }}">
                 </div>
-        
+
                 <!-- คอลัมน์ขวา จัดให้กึ่งกลาง -->
                 <div class="col d-flex justify-content-center align-items-center">
-                    {% format_solar_date solar_date %}
+                    {% format_solar_date solar_date CE %}
                 </div>
             </div>
+
+            {% uposatha_date solar_date th_zodiac_no th_zodiac %}
+
+            {% important_day solar_date %}
+
             <div class="row">
-                <!-- คอลัมน์ 1 กว้าง -->
-                <div class="col-5 d-flex justify-content-center align-items-center">
-                    {{ BE }}
+                <div class="col d-flex justify-content-center align-items-center pt-2 lead">
+                    {{ solar_date|next_uposatha_day }}
                 </div>
-            
-                <!-- คอลัมน์ 2 แคบ -->
-                <div class="col-2 d-flex justify-content-center align-items-center">
-                    <img src="{% static 'website/img/zodiac/icon/' %}{{ th_zodiac_no }}.png"
-                        alt="zodiac" class="w-100">
+
+                <div class="accordion accordion-flush ml-2 mr-2" id="accordionFlush">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed rounded-top-5"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                <!-- สามารถใส่ไอคอนหรือข้อความที่นี่ -->
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlush">
+                            <div class="accordion-body bg-light-subtle rounded rounded-5">
+                                {% upcoming_uposatha_dates solar_date 12 %}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            
-                <!-- คอลัมน์ 3 กว้าง -->
-                <div class="col-5 d-flex justify-content-center align-items-center">
-                    {{ CE }}
-                </div>
+
             </div>
-            
+
         </div>
-        
-        <article class="crx-article text-dark lead px-3 bg-light bg-opacity-50">
+
+        <!-- article -->
+        <article class="crx-article text-dark lead px-3">
 
             <div class="container pt-5 text-center">
-                <h1 class="pb-4">{{ self.title }}</h1>
+                <h1 class="pb-4">{{ self.display_title }}</h1>
 
                 {% for block in page.body %}
                     {% include_block block with settings=settings %}
@@ -69,7 +107,7 @@
                     {% endif %}
 
                     <h3 class="pt-3">{{ daily_quote.title }}</h3>
-                    
+
                     {% if daily_quote.caption %}
                         {% if daily_quote.seo_author %}
                             <span class="mx-2">❀</span>
@@ -94,12 +132,24 @@
 
         </article>
 
-        <calendar>
-        </calendar>
-
-        <event>
-        </event>
     </div>
+
+    <!-- event calendar-->
+    {% if page.linked_event %}
+    <div class='py-5 px-4'>
+        <div
+            data-block="calendar"
+            data-default-date="{% now 'Y-m-d' %}"
+            data-default-view="listMonth"
+            data-event-display="list-item"
+            data-event-source-url="{% url 'today_message_get_calendar_events' %}"
+            data-page-id="{{ page.linked_event.id }}"
+            data-timezone="{{ 'TIME_ZONE'|django_settings }}">
+            <noscript>JavaScript is required to view the Calendar.</noscript>
+        </div>
+    </div>
+    {% endif %}
+
 {% endblock %}
 
 {% block custom_scripts %}
@@ -107,8 +157,15 @@
         window.addEventListener('scroll', function() {
             var parallax = document.querySelector('.parallax');
             var scrollPosition = window.pageYOffset;
-            
+
             parallax.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
-        });    
+        });
     </script>
+{% endblock %}
+
+{% block coderedcms_scripts %}
+    {{ block.super }}
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js" integrity="sha256-alsi6DkexWIdeVDEct5s7cnqsWgOqsh2ihuIZbU6H3I=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/bootstrap5@6.1.9/index.global.min.js" integrity="sha256-gUOOsuvXIJriWP5FGvNLUHPduBqgnIyGuAxWiWtHxMo=" crossorigin="anonymous"></script>
+    <script src="{% static 'coderedcms/js/crx-events.js' %}?v={% coderedcms_version %}"></script>
 {% endblock %}

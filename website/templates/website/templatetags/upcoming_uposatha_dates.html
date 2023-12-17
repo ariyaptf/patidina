@@ -1,0 +1,56 @@
+{% load static today_message_tags bootstrap_icons %}
+
+{% block extra_head %}
+    <style>
+        .upcoming-uposadha {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .rotate-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+{% endblock %}
+
+<table class="upcoming-uposadha table">
+    <thead>
+        <tr>
+            <th colspan='2'>{{'เดือน ปี'|fraction_format }}</th>
+            <th colspan='3' style='font-size: small; text-align: center;'>
+                <span class='px-2' style='font-weight: lighter;'>จันทรคติไทย</span>
+                <span>จ.1</span>|
+                <span class='text-primary'>2</span>
+                <span class='px-2' style='font-weight: lighter;'>ธรรมยุติ</span>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for month, dates in monthly_uposatha.items %}
+            <tr>
+                <td>{{ month|fraction_format }}</td> <!-- เดือน -->
+                <!-- วนลูปตามลำดับวันที่และช่องว่างในแต่ละเดือน -->
+                {% for date in dates %}
+                    {% if date %}
+                        <td class="text-center">
+                            {{ date.day }}<br>
+                            {% if date.phase == 'ขึ้น 15' %}
+                                🌕
+                            {% elif date.phase == 'แรม 8' %}
+                                🌗
+                            {% elif date.phase == 'แรม 14' %}
+                                🌑
+                            {% elif date.phase == 'แรม 15' %}
+                                🌑
+                            {% elif date.phase == 'ขึ้น 8' %}
+                                🌓
+                            {% endif %}
+                        </td>
+                    {% else %}
+                        <td></td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

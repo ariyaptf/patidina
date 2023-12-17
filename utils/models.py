@@ -1,5 +1,8 @@
-from datetime import timedelta
+import math
+from astropy.time import Time
+from datetime import timedelta, date
 from django.db import models
+from django.core.exceptions import ValidationError
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 from modelcluster.fields import ParentalKey
@@ -9,10 +12,11 @@ from wagtail.admin.panels import (
     InlinePanel,
     MultiFieldPanel,
 )
+from pythaidate import CsDate
 from wagtail.models import Orderable
 from wagtail.snippets.models import register_snippet
-
 from .moon import calculate_moon_phase
+
 
 # ----------------------------
 # MoonPhaseCreatorForm
@@ -41,7 +45,7 @@ class MoonPhaseCreatorForm(models.Model):
         calculate_moon_phase(date_str, before_date, after_date)
 
         super().save(*args, **kwargs)
-    
+
 # ----------------------------
 # ImportantDaysInLunarCalendar
 # ----------------------------
@@ -77,17 +81,17 @@ class ImportantDaysInLunarCalendar(ClusterableModel):
         ('13', '12'),
     ]
 
-    # Fields for lunar_date
-    moon_phase = models.CharField(_("moon phase"), max_length=10, choices=MOON_PHASE_CHOICES, default='waxing')
+    # Fields for lunar in normal year
+    moon_phase = models.CharField(_("moon phase"), max_length=10, choices=MOON_PHASE_CHOICES, default='01')
     lc_day = models.CharField(_("day"), max_length=2, choices=DAY_CHOICES)
     lc_month = models.CharField(_("month"), max_length=2, choices=MONTH_CHOICES)
 
-    # Fields for lunar_date_in_adhikamasa
-    moon_phase_adhikamasa = models.CharField(_("moon phase"), max_length=10, choices=MOON_PHASE_CHOICES, default='waxing')
+    # Fields for lunar date in adhikamasa year
+    moon_phase_adhikamasa = models.CharField(_("moon phase"), max_length=10, choices=MOON_PHASE_CHOICES, default='01')
     lc_day_adhikamasa = models.CharField(_("day"), max_length=2, choices=DAY_CHOICES)
     lc_month_adhikamasa = models.CharField(_("month"), max_length=2, choices=MONTH_CHOICES)
 
-    # Existing fields
+    # Fields Lunar date
     lunar_date = models.CharField(_("lunar date"), max_length=25, blank=True)
     lunar_date_in_adhikamasa = models.CharField(_("lunar date in adhikamasa"), max_length=25, blank=True)
 
@@ -120,13 +124,13 @@ class ImportantDaysInLunarCalendar(ClusterableModel):
         moon_phase_display = self.get_moon_phase_display()
         lc_month_display = self.get_lc_month_display()
         lc_day_display = self.get_lc_day_display()
-        self.lunar_date = f"{moon_phase_display} {lc_day_display} ค่ำ เดือน {lc_month_display}"
+        self.lunar_date = f"{moon_phase_display} {lc_day_display.strip()} ค่ำ เดือน {lc_month_display.strip()}"
 
         # Update lunar_date_in_adhikamasa from the fields for lunar_date_in_adhikamasa
         moon_phase_adhikamasa_display = self.get_moon_phase_adhikamasa_display()
         lc_month_adhikamasa_display = self.get_lc_month_adhikamasa_display()
         lc_day_adhikamasa_display = self.get_lc_day_adhikamasa_display()
-        self.lunar_date_in_adhikamasa = f"{moon_phase_adhikamasa_display} {lc_day_adhikamasa_display} ค่ำ เดือน {lc_month_adhikamasa_display}"
+        self.lunar_date_in_adhikamasa = f"{moon_phase_adhikamasa_display} {lc_day_adhikamasa_display.strip()} ค่ำ เดือน {lc_month_adhikamasa_display.strip()}"
 
         super().save(*args, **kwargs)
 
@@ -136,17 +140,20 @@ class LunarCalendarDetail(Orderable, models.Model):
         related_name='lunar_calendar_details',
         verbose_name=_('Detail')
     )
-    name = models.CharField(_("name"), max_length=255)
+    name = models.CharField(_('name'), max_length=255)
+    buddhist_commemorative_day = models.BooleanField(
+        default=True, verbose_name=_('Buddhist Commemorative Day')
+    )
     article_page = models.OneToOneField(
         'wagtailcore.Page',
         on_delete=models.SET_NULL,
         null=True,
         blank=True,
-        verbose_name=_("Article Page")
+        verbose_name=_('Article Page')
     )
 
     def __str__(self):
-        return self.detail_text
+        return self.name
 
 
 # ----------------------------
@@ -180,8 +187,8 @@ class ImportantDaysInSolarCalendar(ClusterableModel):
         (12, _("December")),
     ]
 
-    day = models.IntegerField(_("day"), choices=DAY_CHOICES, blank=False, null=True)
-    month = models.IntegerField(_("month"), choices=MONTH_CHOICES, blank=False, null=True)
+    day = models.IntegerField(_('day'), choices=DAY_CHOICES, blank=False, null=True)
+    month = models.IntegerField(_('month'), choices=MONTH_CHOICES, blank=False, null=True)
 
     panels = [
         MultiFieldPanel([
@@ -195,7 +202,7 @@ class ImportantDaysInSolarCalendar(ClusterableModel):
         details_names = [detail.name for detail in self.solar_calendar_details.all()]
         details_str = ", ".join(details_names)
         return f"{self.day}/{self.month} - {details_str}"
-    
+
 class SolarCalendarDetail(Orderable, models.Model):
     solar_calendar_day = ParentalKey(
         ImportantDaysInSolarCalendar,
@@ -208,8 +215,66 @@ class SolarCalendarDetail(Orderable, models.Model):
         on_delete=models.SET_NULL,
         null=True,
         blank=True,
-        verbose_name=_("Article Page")
+        verbose_name=_('Article Page')
     )
 
     def __str__(self):
-        return self.detail_text
+        return self.name
+
+
+# ----------------------------
+# PatidinaPakkhaganana
+# ----------------------------
+def validate_buddhist_year(value):
+    if not value.isdigit() or len(value) != 4 or int(value) < 2500:
+        raise ValidationError(
+            _('The year must be a 4-digit number and no less than 2500 (Buddhist Era).'),
+            params={'value': value},
+        )
+
+@register_snippet
+class PatidinaPakkhaganana(ClusterableModel):
+    """
+    Uposadha day of Dhammayuttikanikaya
+    """
+    title = models.CharField(
+        _('title'),
+        max_length=255,
+        validators=[validate_buddhist_year],
+        help_text=_('Enter the year in Buddhist Era format, which should be a 4-digit number and no less than 2500.')
+    )
+
+    class Meta:
+        verbose_name = _("Paṭidina Pakkhagaṇanā")
+        verbose_name_plural = _("Paṭidina Pakkhagaṇanā")
+
+    panels = [
+        FieldPanel('title'),
+        InlinePanel('uposatha_of_pakkhaganana', label=_("Uposatha Day")),
+    ]
+
+    def __str__(self):
+        return self.title
+
+
+
+class UposathaOfPakkhaganana(Orderable, models.Model):
+    # Choices for moon phase
+    MOON_PHASE_CHOICES = [
+        ('last_quarter', 'จันทร์ลับ'),
+        ('new_moon', 'จันทร์ดับ'),
+        ('first_quarter', 'จันทร์กึ่ง'),
+        ('full_moon', 'จันทร์เพ็ญ'),
+    ]
+
+    patidina_pakkhaganana = ParentalKey(
+        PatidinaPakkhaganana,
+        related_name='uposatha_of_pakkhaganana',
+        verbose_name=_('Uposatha Day')
+    )
+    selected_date = models.DateField()
+    moon_phase = models.CharField(_("moon phase"), max_length=15, choices=MOON_PHASE_CHOICES)
+
+    def __str__(self):
+        phase = self.get_moon_phase_display()
+        return f"{self.selected_date.strftime('%Y-%m-%d')}-{phase}"
