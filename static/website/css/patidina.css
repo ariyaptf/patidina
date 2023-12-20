@@ -3,8 +3,31 @@
 @import url(fonts/fonts.css);
 @import url(image.css);
 
+html {
+    height: 100%;
+}
+
 body * {
-    font-family: 'Sarabun';
+    font-family: 'Sarabun', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+#content {
+    flex: 1 0 auto;
+}
+
+#footer {
+    flex-shrink: 0;
+}
+
+.btn {
+    font-family: 'Sarabun' !important;
 }
 
 .text-lead {

@@ -256,6 +256,8 @@ class TodayMessagePage(CoderedWebPage):
         context['th_zodiac'] = th_zodiac(today)
         context['th_zodiac_no'] = th_zodiac(today, output_type=3)
         context['CE'] = era(today, output_type=7)
+        # qr-code สำหรับหน้านี้
+        context['page_link'] =  self.full_url
 
         return context
 

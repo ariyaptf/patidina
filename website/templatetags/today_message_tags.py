@@ -231,3 +231,8 @@ def important_day(today_solar_date):
     }
 
 
+@register.inclusion_tag('website/templatetags/organization_info.html')
+def organization_info(org_info):
+    return {
+        'org': org_info
+    }

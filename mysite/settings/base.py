@@ -31,6 +31,8 @@ INSTALLED_APPS = [
     "utils",
     "fontawesomefree",
     "django_bootstrap_icons",
+    "django_social_share",
+    'qr_code',
     # Wagtail CRX (CodeRed Extensions)
     "coderedcms",
     "django_bootstrap5",
@@ -191,3 +193,18 @@ TAGGIT_CASE_INSENSITIVE = True
 # Sets default for primary key IDs
 # See https://docs.djangoproject.com/en/4.1/ref/models/fields/#bigautofield
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+# An additional cache for QR codes
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+    },
+    'qr-code': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'qr-code-cache',
+        'TIMEOUT': 3600
+    }
+}
+
+QR_CODE_CACHE_ALIAS = 'qr-code'

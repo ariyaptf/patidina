@@ -1,0 +1,14 @@
+{% load bootstrap_icons %}
+
+<div class="copy-this">
+    {% bs_icon 'copy' size='1.2em' color='black' %}
+    <button
+        type="button"
+        data-copy-btn="buttonCopy"
+        data-copy-url="{{ copy_url }}"
+        class="{{ link_class }}"
+        style="border:none; background:transparent;"
+    >
+        {{ link_text }}
+    </button>
+</div>

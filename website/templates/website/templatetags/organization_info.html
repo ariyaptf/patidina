@@ -1,0 +1,23 @@
+{% load wagtailimages_tags bootstrap_icons %}
+
+<div class="container crx-grid">
+    <div class="row ">
+        <div class="col-md-3 ">
+            {% image org.seo_logo original format-webp as logo %}
+            <img src="{{ logo.url }}" class="img-fluid " alt="Logo">
+        </div>
+
+        <div class="col-md ">
+            <div class='lead'>{{ org.struct_org_name }}</div>
+            <p class='small'>
+                {{ org.struct_org_address_street }}<br>
+                {{ org.struct_org_address_locality }}<br>
+                {{ org.struct_org_address_region }} {{ org.struct_org_address_postal }}<br>
+            </p>
+            <p>
+                {% bs_icon 'telephone-plus' %}<a href="tel:{{ org.struct_org_phone }}">{{ org.struct_org_phone }}</a>
+            </p>
+
+        </div>
+    </div>
+</div>
