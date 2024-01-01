@@ -16,11 +16,11 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 
 # Use 4 spaced for indentation.
-[*.{md,py,rst}]
+[*.{md,py,rst,html,js,css}]
 indent_style = space
 indent_size = 4
 
 # Use 2 spaces for indentation.
-[*.{css,sass,scss,html,js,json,ts,yml}]
+[*.{sass,scss,json,ts,yml}]
 indent_style = space
 indent_size = 2

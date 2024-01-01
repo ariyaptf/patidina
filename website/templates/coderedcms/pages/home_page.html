@@ -1,0 +1,133 @@
+{% extends "coderedcms/pages/web_page_notitle.html" %}
+
+{% load coderedcms_tags static %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'website/css/top_calendar.css' %}">
+    <style>
+        .th_lunar_date {
+            font-size: 10px;
+            color: lightgray;
+        }
+        .uposatha_date {
+            font-size: 10px;
+            color: black;
+        }
+        .uposatha_event {
+            font-size: 10px;
+            color: red;
+        }
+        .holiday {
+            font-size: 8px;
+            color: black;
+            width: 100%;
+            overflow: auto;
+        }
+        .holiday span {
+            word-wrap: break-word; /* ให้ข้อความหักขึ้นบรรทัดใหม่ */
+            display: inline-block; /* หรืออาจจะใช้ 'block' ขึ้นอยู่กับการจัดการเนื้อหาอื่นๆ */
+        }
+
+        /* Media query for mobile devices */
+        @media screen and (max-width: 600px) {
+            .th_lunar_date, .uposatha_date, .uposatha_event {
+                font-size: 9px; /* Smaller font size for mobile devices */
+            }
+        }
+    </style>
+{% endblock %}
+
+{% load wagtailcore_tags today_message_tags %}
+
+{% block content_body %}
+
+    <!-- top calendar -->
+    <!-- Element สำหรับมือถือ -->
+    <div class="d-block d-md-none">
+        {% include "website/pages/includes/today_message_page/top_calendar_4m.html" %}
+    </div>
+
+    <!-- Element สำหรับโน๊ตบุ๊ค -->
+    <div class="d-none d-md-block">
+        {% include "website/pages/includes/today_message_page/top_calendar.html" %}
+    </div>
+
+    <!-- ปฏิทิน -->
+    <div id='calendar' class="container py-5"></div>
+
+    <!-- เนื้อหาอื่น ๆ -->
+    {% for block in page.body %}
+        {% include_block block with settings=settings %}
+    {% endfor %}
+
+{% endblock %}
+
+{% block custom_scripts %}
+{% endblock %}
+
+{% block coderedcms_scripts %}
+    {{ block.super }}
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js" integrity="sha256-alsi6DkexWIdeVDEct5s7cnqsWgOqsh2ihuIZbU6H3I=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/bootstrap5@6.1.9/index.global.min.js" integrity="sha256-gUOOsuvXIJriWP5FGvNLUHPduBqgnIyGuAxWiWtHxMo=" crossorigin="anonymous"></script>
+
+    <script>
+        function fetchEvents(calendar, start, end) {
+            fetch('website/api/events?start=' + start + '&end=' + end)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(events => {
+                    console.log(events)
+                    calendar.removeAllEvents();
+                    calendar.addEventSource(events);
+                })
+                .catch(error => {
+                    console.error('Error fetching events:', error);
+                });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                timeZone: 'Asia/Bangkok',
+                locale: 'th',
+                initialView: 'dayGridMonth',
+                displayEventTime: false,
+                eventOrder: "start",
+                editable: false,
+                datesSet: function(dateInfo) {
+                    var start = dateInfo.startStr;
+                    var end = dateInfo.endStr;
+                    fetchEvents(calendar, start, end);
+                },
+                eventContent: function(arg) {
+                    // สร้างอิลิเมนต์และกำหนดคลาส
+                    var el = document.createElement('div');
+                    var className = arg.event.groupId;
+                    if (className) {
+                        el.classList.add(className);  // เพิ่มคลาสที่กำหนดจากข้อมูลเหตุการณ์
+                    }
+
+                    var lunar_date = arg.event.title
+                    var indexOfMonth = lunar_date.indexOf('เดือน');
+                    var part1 = lunar_date.substring(0, indexOfMonth).trim();
+                    var part2 = lunar_date.substring(indexOfMonth).trim();
+                    if (window.innerWidth <= 600) {
+                        el.innerHTML = '<span>' + part1 + '</span><br><span>' + part2 + '</span>';
+                    } else {
+                        el.innerHTML = '<span>' + lunar_date + '</span>';
+                    }
+                    return { domNodes: [el] };
+                }
+            });
+
+            calendar.render();
+        });
+
+    </script>
+
+{% endblock %}

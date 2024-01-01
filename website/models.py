@@ -2,6 +2,7 @@
 Create or customize your page models here.
 """
 import random
+import ephem
 from datetime import date, datetime
 
 from django.db import models
@@ -32,7 +33,6 @@ from wagtail.admin.panels import (
 from wagtail.fields import StreamField
 from custom_media.models import CustomImage as Image
 
-from .blocks import PoetryBlock
 from utils.moon import (
     convert_float_to_dms
 )
@@ -42,6 +42,10 @@ from utils.calendar import (
     era
 )
 
+from .blocks import (
+    LAYOUT_STREAMBLOCKS,
+    HTML_STREAMBLOCKS
+)
 
 class ArticlePage(CoderedArticlePage):
     """
@@ -171,6 +175,13 @@ class WebPage(CoderedWebPage):
     General use page with featureful streamfield and SEO attributes.
     """
 
+    body = StreamField(
+        LAYOUT_STREAMBLOCKS,
+        null=True,
+        blank=True,
+        use_json_field=True,
+    )
+
     class Meta:
         verbose_name = "Web Page"
 
@@ -181,6 +192,13 @@ class TodayMessagePage(CoderedWebPage):
     """
     Short and impressive article for daily learning with today's calendar and events.
     """
+
+    body = StreamField(
+        LAYOUT_STREAMBLOCKS,
+        null=True,
+        blank=True,
+        use_json_field=True,
+    )
 
     display_title = models.CharField(_('Display title'), max_length=255)
     linked_event = models.ForeignKey(
@@ -266,15 +284,10 @@ class DailyQuotesPage(CoderedArticlePage):
     """
     The poetry or short article.
     """
-    # จัดเรียง CONTENT_STREAMBLOCKS
-    CUSTOM_CONTENT_STREAMBLOCKS = [
-        # ระบุ 'poetry' ไว้ตามลำดับที่ต้องการ
-        ('poetry', PoetryBlock()),
-        # ตามด้วย blocks อื่นๆ จาก CONTENT_STREAMBLOCKS ต้นฉบับ
-    ] + [block for block in CONTENT_STREAMBLOCKS if block[0] != 'poetry']
 
+    # Override body to provide simpler content
     body = StreamField(
-        CUSTOM_CONTENT_STREAMBLOCKS,
+        HTML_STREAMBLOCKS,
         null=True,
         blank=True,
         use_json_field=True,

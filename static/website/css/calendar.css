@@ -1,0 +1,17 @@
+.accordion-item {
+    background-color: transparent;
+}
+.accordion-button {
+    max-width: 50px; /* หรือขนาดที่ต้องการ */
+    height: 50px; /* หรือขนาดที่ต้องการ */
+    opacity:  0.4;
+    border: none; /* ลบเส้นขอบ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion-header {
+    justify-content: center; /* จัดกลางปุ่มใน header */
+    display: flex;
+}

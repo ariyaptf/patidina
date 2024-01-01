@@ -1,0 +1,21 @@
+{% load  wagtailcore_tags coderedcms_tags %}
+
+{% if page.linked_event %}
+    <div class='pb-2 px-4'>
+        <div class="lead text-center">กิจกรรม</div>
+        <!-- Description -->
+        {% for block in page.linked_event.body %}
+            {% include_block block with settings=settings %}
+        {% endfor %}
+        <div
+            data-block='calendar'
+            data-default-date="{% now 'Y-m-d' %}"
+            data-default-view='listMonth'
+            data-event-display='list-item'
+            data-event-source-url="{% url 'today_message_get_calendar_events' %}"
+            data-page-id='{{ page.linked_event.id }}'
+            data-timezone="{{ 'TIME_ZONE'|django_settings }}">
+            <noscript>JavaScript is required to view the Calendar.</noscript>
+        </div>
+    </div>
+{% endif %}

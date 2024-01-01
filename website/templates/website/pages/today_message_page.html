@@ -1,241 +1,43 @@
 {% extends "coderedcms/pages/base.html" %}
 
-{% load bootstrap_icons wagtailcore_tags wagtailimages_tags utils_tags today_message_tags coderedcms_tags social_share qr_code static %}
+{% load coderedcms_tags static %}
 
 {% block extra_head %}
-    <style>
-        .accordion-item {
-            background-color: transparent;
-        }
-        .accordion-button {
-            max-width: 50px; /* หรือขนาดที่ต้องการ */
-            height: 50px; /* หรือขนาดที่ต้องการ */
-            opacity:  0.4;
-            border: none; /* ลบเส้นขอบ */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .accordion-header {
-            justify-content: center; /* จัดกลางปุ่มใน header */
-            display: flex;
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'website/css/top_calendar.css' %}">
 {% endblock %}
 
 {% block content %}
     <div class="parallax" style="background-image: url('{{ background_image_url }}');">
 
         <!-- top calendar -->
-        <div class="container pt-4 pb-2 text-white"
-            style="max-width:600px !important;
-               border-bottom-left-radius: 2rem; border-bottom-right-radius: 2rem;
-               background-image: url('{{ background_image_for_title }}');
-               background-size: cover;     /* ทำให้รูปภาพครอบคลุมพื้นที่ทั้งหมด */
-               background-position: center; /* ตำแหน่งของรูปภาพอยู่ตรงกลาง */
-               background-repeat: no-repeat; /* ไม่ทำซ้ำรูปภาพ */">
+        <!-- Element สำหรับมือถือ -->
+        <div class="d-block d-md-none">
+            {% include "website/pages/includes/today_message_page/top_calendar_4m.html" %}
+        </div>
 
-
-            <div class="row">
-                <!-- คอลัมน์ซ้าย จัดให้กึ่งกลาง -->
-                <div class="col d-flex justify-content-center align-items-center">
-                    {% format_lunar_date lunar_date BE %}
-                </div>
-
-                <!-- คอลัมน์กลาง จัดให้กึ่งกลาง -->
-                <div class="col d-flex justify-content-center align-items-center">
-                    <img src="{% static 'utils/moon/' %}{{ date_str }}.png"
-                        alt="Moon Phase" class="w-100 {{ lunar_date|moonlight_glow }}">
-                </div>
-
-                <!-- คอลัมน์ขวา จัดให้กึ่งกลาง -->
-                <div class="col d-flex justify-content-center align-items-center">
-                    {% format_solar_date solar_date CE %}
-                </div>
-            </div>
-
-            {% uposatha_date solar_date th_zodiac_no th_zodiac %}
-
-            {% important_day solar_date %}
-
-            <div class="row">
-                <div class="col d-flex justify-content-center align-items-center pt-2 lead">
-                    {{ solar_date|next_uposatha_day }}
-                </div>
-
-                <div class="accordion accordion-flush ml-2 mr-2" id="accordionFlush">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed rounded-top-5"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                    aria-expanded="false" aria-controls="flush-collapseOne">
-                                <!-- สามารถใส่ไอคอนหรือข้อความที่นี่ -->
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlush">
-                            <div class="accordion-body bg-light-subtle rounded rounded-5">
-                                {% upcoming_uposatha_dates solar_date 12 %}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
+        <!-- Element สำหรับโน๊ตบุ๊ค -->
+        <div class="d-none d-md-block">
+            {% include "website/pages/includes/today_message_page/top_calendar.html" %}
         </div>
 
         <!-- article -->
-        <article class="crx-article text-dark lead px-3">
-
-            <div class="container pt-5 text-center">
-                <h1 class="pb-4">{{ self.display_title }}</h1>
-            </div>
-
-            {% block article_header %}
-                <div class="container text-center">
-
-                    <h2>{{daily_quote.classifier_terms.get.name}}</h2>
-
-                    {% get_image_by_name "default_line" as default_line_image %}
-                    {% if default_line_image %}
-                        {% image default_line_image original as img %}
-                        <img src="{{ img.url }}" alt="Your Image Description" class="w-75">
-                    {% endif %}
-
-                    <h3 class="pt-3">{{ daily_quote.title }}</h3>
-
-                    {% if daily_quote.caption %}
-                        {% if daily_quote.seo_author %}
-                            <span class="mx-2">❀</span>
-                            <span class="article-author">{{ daily_quote.seo_author }}</span>
-                            <span class="mx-2">❀</span>
-                        {% endif %}
-                    {% endif %}
-                </div>
-            {% endblock %}
-
-            {% block article_body %}
-                <div class="container mx-auto py-4 article-body" style="max-width:400px !important">
-                    {% for block in daily_quote.body %}
-                        {% include_block block with settings=settings %}
-                    {% endfor %}
-                    <div class="container pt-4">
-                        <div class="row">
-                          <!-- qr code -->
-                          <div class='col text-start'>
-                              {% qr_from_text page_link size='T' %}
-                          </div>
-                            <div class="col ms-auto text-end">
-                                {% post_to_facebook object_or_url "แชร์เฟส" "btn btn-link text-dark" %}
-
-                                {% copy_to_clipboard object_or_url "ก๊อปลิ้งค์" "btn btn-link text-dark" %}
-                            </div>
-                      </div>
-                </div>
-            {% endblock %}
-
-        </article>
+        {% include "website/pages/includes/today_message_page/article.html" %}
 
     </div>
 
     <!-- Organization Info, Description & Events -->
     <div class='py-2'>
         <!-- Organization Info, Description -->
-        <div class='pb-2 px-4'>
-            <div class='container mx-auto py-5 event-body' style='max-width:400px !important'>
-                <!-- Info -->
-                {% organization_info page %}
-
-                <!-- Description -->
-                {% for block in page.body %}
-                    {% include_block block with settings=settings %}
-                {% endfor %}
-            </div>
-
-        </div>
+        {% include "website/pages/includes/today_message_page/organization_info.html" %}
 
         <!-- Events -->
-        {% if page.linked_event %}
+        {% include "website/pages/includes/today_message_page/event_calendar.html" %}
 
-            <div class='pb-2 px-4'>
-                <div class="lead text-center">กิจกรรม</div>
-                <!-- Description -->
-                {% for block in page.linked_event.body %}
-                    {% include_block block with settings=settings %}
-                {% endfor %}
-                <div
-                    data-block='calendar'
-                    data-default-date="{% now 'Y-m-d' %}"
-                    data-default-view='listMonth'
-                    data-event-display='list-item'
-                    data-event-source-url="{% url 'today_message_get_calendar_events' %}"
-                    data-page-id='{{ page.linked_event.id }}'
-                    data-timezone="{{ 'TIME_ZONE'|django_settings }}">
-                    <noscript>JavaScript is required to view the Calendar.</noscript>
-                </div>
-            </div>
-        {% endif %}
     </div>
 {% endblock %}
 
 {% block custom_scripts %}
-    <script>
-        // parallax effect
-        window.addEventListener('scroll', function() {
-            var parallax = document.querySelector('.parallax');
-            var scrollPosition = window.pageYOffset;
-
-            parallax.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
-        });
-
-        // copy url for social sharing
-        var copyBtn = document.querySelector('[data-copy-btn="buttonCopy"]');
-
-        copyBtn.addEventListener("click", function (event) {
-            var url = copyBtn.getAttribute("data-copy-url");
-            copyTextToClipboard(url);
-            alert('ก๊อปลิ้งค์เรียบร้อย');
-        });
-
-        function copyTextToClipboard(text) {
-            var textArea = document.createElement("textarea");
-
-            // Place in the top-left corner of screen regardless of scroll position.
-            textArea.style.position = "fixed";
-            textArea.style.top = 0;
-            textArea.style.left = 0;
-
-            textArea.style.width = "2em";
-            textArea.style.height = "2em";
-
-            textArea.style.padding = 0;
-
-            // Clean up any borders.
-            textArea.style.border = "none";
-            textArea.style.outline = "none";
-            textArea.style.boxShadow = "none";
-
-            // Avoid flash of the white box if rendered for any reason.
-            textArea.style.background = "transparent";
-
-            textArea.value = text;
-
-            document.body.appendChild(textArea);
-            textArea.focus();
-            textArea.select();
-
-            try {
-                document.execCommand("copy");
-            } catch (err) {
-                console.log("unable to copy");
-            }
-
-            document.body.removeChild(textArea);
-        }
-
-    </script>
+    <script src="{% static 'website/js/today_message_page.js' %}"></script>
 {% endblock %}
 
 {% block coderedcms_scripts %}

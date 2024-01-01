@@ -1,0 +1,51 @@
+{% load wagtailcore_tags wagtailimages_tags utils_tags social_share qr_code %}
+
+<article class="crx-article text-dark lead px-3">
+
+    <div class="container pt-5 text-center">
+        <h1 class="pb-4">{{ self.display_title }}</h1>
+    </div>
+
+    {% block article_header %}
+        <div class="container text-center">
+
+            <h2>{{ daily_quote.classifier_terms.get.name }}</h2>
+
+            {% get_image_by_name "default_line" as default_line_image %}
+            {% if default_line_image %}
+                {% image default_line_image original as img %}
+                <img src="{{ img.url }}" alt="Your Image Description" class="w-75">
+            {% endif %}
+
+            <h3 class="pt-3">{{ daily_quote.title }}</h3>
+
+            {% if daily_quote.caption %}
+                {% if daily_quote.seo_author %}
+                    <span class="mx-2">❀</span>
+                    <span class="article-author">{{ daily_quote.seo_author }}</span>
+                    <span class="mx-2">❀</span>
+                {% endif %}
+            {% endif %}
+        </div>
+    {% endblock %}
+
+    {% block article_body %}
+        <div class="container mx-auto py-4 article-body" style="max-width:400px !important">
+            {% for block in daily_quote.body %}
+                {% include_block block with settings=settings %}
+            {% endfor %}
+            <div class="container pt-4">
+                <div class="row">
+                  <!-- qr code -->
+                  <div class='col text-start'>
+                      {% qr_from_text page_link size='T' %}
+                  </div>
+                    <div class="col ms-auto text-end">
+                        {% post_to_facebook object_or_url "แชร์เฟส" "btn btn-link text-dark" %}
+
+                        {% copy_to_clipboard object_or_url "ก๊อปลิ้งค์" "btn btn-link text-dark" %}
+                    </div>
+              </div>
+        </div>
+    {% endblock %}
+</article>

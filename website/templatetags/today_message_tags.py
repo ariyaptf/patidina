@@ -1,7 +1,7 @@
 import calendar
 import math
 from astropy.time import Time
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from dateutil.relativedelta import relativedelta
 from collections import defaultdict
 from django import template
@@ -11,7 +11,8 @@ from pythaidate import CsDate
 from utils.calendar import (
     get_uposatha_date,
     era, th_lunar_date,
-    adhikamasa
+    adhikamasa,
+    th_zodiac
 )
 from utils.models import (
     UposathaOfPakkhaganana,
@@ -21,9 +22,18 @@ from utils.models import (
 
 register = template.Library()
 
+# initial variables
+ini_solar_date = date.today()
+ini_CE = era(ini_solar_date, output_type=7)
+ini_lunar_date = th_lunar_date(ini_solar_date)
+ini_BE = era(ini_solar_date, output_type=6)
+ini_th_zodiac = th_zodiac(ini_solar_date)
+ini_th_zodiac_no = th_zodiac(ini_solar_date, output_type=3)
+ini_months_to_calculate = 12
+
 
 @register.inclusion_tag('website/templatetags/format_lunar_date.html')
-def format_lunar_date(lunar_date, BE):
+def format_lunar_date(lunar_date=ini_lunar_date, BE=ini_BE):
     p = lunar_date.split()
     context = {
         'lunar_phase': p[0],
@@ -36,7 +46,7 @@ def format_lunar_date(lunar_date, BE):
 
 
 @register.inclusion_tag('website/templatetags/format_solar_date.html')
-def format_solar_date(solar_date, CE):
+def format_solar_date(solar_date=ini_solar_date, CE=ini_CE):
     weekday_name = 'x อาทิตย์ จันทร์ อังคาร พุธ พฤหัสบดี ศุกร์ เสาร์'.split()[solar_date.isoweekday()]
     month_name = 'x มกราคม กุมภาพันธ์ มีนาคม เมษายน พฤษภาคม มิถุนายน กรกฎาคม สิงหาคม กันยายน ตุลาคม พฤศจิกายน ธันวาคม'.split()[solar_date.month]
     # แก้ปัญหาบน Windows ปกติเราสามารถใช้ 'solar_date': solar_date.strftime('%d') เพื่อลบ 0 padding
@@ -54,7 +64,7 @@ def format_solar_date(solar_date, CE):
 
 
 @register.inclusion_tag('website/templatetags/uposatha_date.html')
-def uposatha_date(solar_date, th_zodiac_no, th_zodiac):
+def uposatha_date(solar_date=ini_solar_date, th_zodiac_no=ini_th_zodiac_no, th_zodiac=ini_th_zodiac):
     result_of_get_uposatha = get_uposatha_date(solar_date)
 
     # กรองรายการวันอุโบสถที่มากกว่าหรือเท่ากับวันที่กำหนด
@@ -75,7 +85,7 @@ def uposatha_date(solar_date, th_zodiac_no, th_zodiac):
     return context
 
 
-def get_pakkhaganana_uposatha(solar_date, months_to_calculate):
+def get_pakkhaganana_uposatha(solar_date=ini_solar_date, months_to_calculate=ini_months_to_calculate):
     # ตั้งค่าวันเริ่มต้นของการกรองเป็นวันที่ 1 ของเดือนปัจจุบัน
     start_date = solar_date.replace(day=1)
 
@@ -88,7 +98,7 @@ def get_pakkhaganana_uposatha(solar_date, months_to_calculate):
 
 
 @register.inclusion_tag('website/templatetags/upcoming_uposatha_dates.html')
-def upcoming_uposatha_dates(solar_date, months_to_calculate):
+def upcoming_uposatha_dates(solar_date=ini_solar_date, months_to_calculate=ini_months_to_calculate):
     # จันทรคติ
     uposatha_dates = get_uposatha_date(solar_date, months_to_calculate)
 
@@ -144,7 +154,7 @@ def upcoming_uposatha_dates(solar_date, months_to_calculate):
 
 
 @register.filter(name='moonlight_glow')
-def moonlight_glow(lunar_date):
+def moonlight_glow(lunar_date=ini_lunar_date):
     parts = lunar_date.split(" ")
     lunar_phase = parts[0]
     lunar_no = int(parts[1])
@@ -156,7 +166,7 @@ def moonlight_glow(lunar_date):
             return 'quarter-moon'
     elif lunar_phase == 'แรม':
         if lunar_no <= 4:
-            return 'full-moon'
+            return 'fullmoon'
         elif lunar_no <= 8:
             return 'quarter-moon'
 
@@ -164,7 +174,7 @@ def moonlight_glow(lunar_date):
 
 
 @register.filter(name='moon_phase')
-def moon_phase(lunar_date):
+def moon_phase(lunar_date=ini_lunar_date):
     parts = lunar_date.split(" ")
     lunar_phase = parts[0]
     lunar_no = int(parts[1])
@@ -183,8 +193,8 @@ def moon_phase(lunar_date):
     return ''
 
 
-@register.filter(name='next_uposatha_day')
-def next_uposatha_day(solar_date):
+@register.inclusion_tag('website/templatetags/next_uposatha_day.html')
+def next_uposatha_day(solar_date=ini_solar_date):
     # testing
     # solar_date = date(2023,12,13)
     uposatha_dates = get_uposatha_date(solar_date)
@@ -193,11 +203,11 @@ def next_uposatha_day(solar_date):
     difference = (next_uposatha["sd"] - solar_date).days
 
     if difference == 0:
-        return "วันนี้วันพระ"
+        return {'next_uposatha_day': "วันนี้วันพระ"}
     elif difference == 1:
-        return "พรุ่งนี้วันพระ"
+        return {'next_uposatha_day': "พรุ่งนี้วันพระ"}
     else:
-        return f"อีก {difference} วัน ถึงวันพระ"
+        return {'next_uposatha_day': f"อีก {difference} วัน ถึงวันพระ"}
 
 
 @register.filter(name='fraction_format')
@@ -209,20 +219,20 @@ def fraction_format(text_with_space_for_split):
 
 
 @register.inclusion_tag('website/templatetags/important_day.html')
-def important_day(today_solar_date):
-    today_lunar_date = th_lunar_date(today_solar_date)
-    if adhikamasa(today_solar_date.year):
+def important_day(solar_date=ini_solar_date):
+    lunar_date = th_lunar_date(solar_date)
+    if adhikamasa(solar_date.year):
         lunar_important_days = ImportantDaysInLunarCalendar.objects.filter(
-            lunar_date_in_adhikamasa=today_lunar_date
+            lunar_date_in_adhikamasa=lunar_date
         )
     else:
         lunar_important_days = ImportantDaysInLunarCalendar.objects.filter(
-            lunar_date=today_lunar_date
+            lunar_date=lunar_date
         )
 
     solar_important_days = ImportantDaysInSolarCalendar.objects.filter(
-        day=today_solar_date.day,
-        month=today_solar_date.month
+        day=solar_date.day,
+        month=solar_date.month
     )
 
     return {
@@ -235,4 +245,15 @@ def important_day(today_solar_date):
 def organization_info(org_info):
     return {
         'org': org_info
+    }
+
+
+@register.inclusion_tag('website/templatetags/moon_phase_image.html')
+def moon_phase_image():
+    today = date.today()
+    file_name = today.strftime('%Y-%m-%d')
+    lunar_date = th_lunar_date(today)
+    return {
+        'file_name': file_name,
+        'lunar_date': lunar_date
     }

@@ -359,17 +359,33 @@ def collect_uposatha_date(dates):
 
     for solar_date in dates:
         lunar_date = th_lunar_date(solar_date)
-        lunar_no = lunar_date.split(" ")[1]
+        lunar_no, lunar_month = lunar_date.split(" ")[1], lunar_date.split(" ")[3]
         lunar_phase = lunar_date.split(" ")[0]
         if lunar_no in ['8', '14', '15']:
             if not (lunar_no == '14' and lunar_phase == "ขึ้น"):
-                result.append({'ld': lunar_date, 'sd': solar_date})
+                result.append({'ld': lunar_date, 'sd': solar_date, 'month': lunar_month})
 
-    # ลบ "แรม 14 ค่ำ" หากมี "แรม 15 ค่ำ" ในเดือนเดียวกัน
-    if any("แรม 15 ค่ำ" in date['ld'] for date in result):
-        result = [date for date in result if not ("แรม 14 ค่ำ" in date['ld'])]
+    # สร้างรายการเพื่อเก็บวันที่ 'แรม 15 ค่ำ'
+    dates_with_15 = {d['sd'] for d in result if "แรม 15 ค่ำ" in d['ld']}
 
-    return result
+    # ลบ 'แรม 14 ค่ำ' ออกหากมี 'แรม 15 ค่ำ' ในเดือนเดียวกัน
+    result_final = []
+    for date in result:
+        if "แรม 14 ค่ำ" in date['ld']:
+            # ตรวจสอบว่ามี 'แรม 15 ค่ำ' ในเดือนเดียวกันหรือไม่
+            next_month = (date['sd'].replace(day=28) + timedelta(days=4)).replace(day=1)
+            if any(d >= date['sd'] and d < next_month for d in dates_with_15):
+                continue
+        result_final.append(date)
+
+    return result_final
+
+
+
+
+
+
+
 
 
 # 16 next_4_phase

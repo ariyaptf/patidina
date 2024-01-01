@@ -1,0 +1,6 @@
+{% load today_message_tags static %}
+
+<img src="{% static 'utils/moon/' %}{{ file_name }}.png"
+alt="Moon Phase"
+class="w-100 {{ lunar_date|moonlight_glow }}">
+

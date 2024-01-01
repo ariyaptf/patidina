@@ -1,0 +1,69 @@
+<!-- รับค่า
+    background_image_for_title,
+    lunar_date, BE,
+    date_str,
+    solar_date, CE,
+    th_zodiac_no,
+    th_zodiac
+-->
+
+{% load today_message_tags static %}
+
+<div class="pt-4 text-white top-calendar-img">
+
+    <div class="row">
+        <div class='col-5'>
+            <div class='row'>
+                <!-- คอลัมน์ซ้าย จัดให้กึ่งกลาง -->
+                <div class="col d-flex justify-content-center align-items-center">
+                    {% format_lunar_date %}
+                </div>
+
+                <!-- คอลัมน์กลาง จัดให้กึ่งกลาง -->
+                <div class="col d-flex justify-content-center align-items-center">
+                    {% moon_phase_image %}
+                </div>
+
+                <!-- คอลัมน์ขวา จัดให้กึ่งกลาง -->
+                <div class="col d-flex justify-content-center align-items-center">
+                    {% format_solar_date %}
+                </div>
+            </div>
+        </div>
+
+        <div class='col-7'>
+            {% uposatha_date %}
+
+            <div class='row'>
+                {% next_uposatha_day %}
+            </div>
+
+            {% important_day %}
+
+        </div>
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="accordion accordion-flush ml-2 mr-2" id="accordionFlush">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed rounded-top-5"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                            aria-expanded="false" aria-controls="flush-collapseOne">
+                        <!-- สามารถใส่ไอคอนหรือข้อความที่นี่ -->
+                    </button>
+                </h2>
+                <div id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlush">
+                    <div class="accordion-body bg-light-subtle rounded">
+                        {% upcoming_uposatha_dates %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
