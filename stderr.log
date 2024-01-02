@@ -2361,3 +2361,207 @@ Not Found: /test/wp-includes/wlwmanifest.xml
 Not Found: /site/wp-includes/wlwmanifest.xml
 Not Found: /cms/wp-includes/wlwmanifest.xml
 Not Found: /owa/auth/logon.aspx
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Internal Server Error: /ptf/dhammavati/
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 669, in _get_response
+    response = obj.serve_preview(request, preview_mode)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 802, in serve_preview
+    self.get_preview_context(request, mode_name),
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 1916, in get_preview_context
+    return self.get_context(request)
+  File "/usr/local/lsws/Example/html/mysite/website/models.py", line 268, in get_context
+    lat = self.seo_struct_org_dict.get('geo')['latitude']
+TypeError: 'NoneType' object is not subscriptable
+ERROR:django.request:Internal Server Error: /ptf/dhammavati/
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 669, in _get_response
+    response = obj.serve_preview(request, preview_mode)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 802, in serve_preview
+    self.get_preview_context(request, mode_name),
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 1916, in get_preview_context
+    return self.get_context(request)
+  File "/usr/local/lsws/Example/html/mysite/website/models.py", line 268, in get_context
+    lat = self.seo_struct_org_dict.get('geo')['latitude']
+TypeError: 'NoneType' object is not subscriptable
+Internal Server Error: /ptf/dhammavati/
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 669, in _get_response
+    response = obj.serve_preview(request, preview_mode)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 802, in serve_preview
+    self.get_preview_context(request, mode_name),
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 1916, in get_preview_context
+    return self.get_context(request)
+  File "/usr/local/lsws/Example/html/mysite/website/models.py", line 268, in get_context
+    lat = self.seo_struct_org_dict.get('geo')['latitude']
+TypeError: 'NoneType' object is not subscriptable
+ERROR:django.request:Internal Server Error: /ptf/dhammavati/
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 669, in _get_response
+    response = obj.serve_preview(request, preview_mode)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 802, in serve_preview
+    self.get_preview_context(request, mode_name),
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 1916, in get_preview_context
+    return self.get_context(request)
+  File "/usr/local/lsws/Example/html/mysite/website/models.py", line 268, in get_context
+    lat = self.seo_struct_org_dict.get('geo')['latitude']
+TypeError: 'NoneType' object is not subscriptable
+Internal Server Error: /ptf/dhammavati/
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 669, in _get_response
+    response = obj.serve_preview(request, preview_mode)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 802, in serve_preview
+    self.get_preview_context(request, mode_name),
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 1916, in get_preview_context
+    return self.get_context(request)
+  File "/usr/local/lsws/Example/html/mysite/website/models.py", line 268, in get_context
+    lat = self.seo_struct_org_dict.get('geo')['latitude']
+TypeError: 'NoneType' object is not subscriptable
+ERROR:django.request:Internal Server Error: /ptf/dhammavati/
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 669, in _get_response
+    response = obj.serve_preview(request, preview_mode)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 802, in serve_preview
+    self.get_preview_context(request, mode_name),
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 1916, in get_preview_context
+    return self.get_context(request)
+  File "/usr/local/lsws/Example/html/mysite/website/models.py", line 268, in get_context
+    lat = self.seo_struct_org_dict.get('geo')['latitude']
+TypeError: 'NoneType' object is not subscriptable
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Internal Server Error: /ptf/dhammavati/
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 669, in _get_response
+    response = obj.serve_preview(request, preview_mode)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 802, in serve_preview
+    self.get_preview_context(request, mode_name),
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 1916, in get_preview_context
+    return self.get_context(request)
+  File "/usr/local/lsws/Example/html/mysite/website/models.py", line 268, in get_context
+    lat = self.seo_struct_org_dict.get('geo')['latitude']
+TypeError: 'NoneType' object is not subscriptable
+ERROR:django.request:Internal Server Error: /ptf/dhammavati/
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 669, in _get_response
+    response = obj.serve_preview(request, preview_mode)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 802, in serve_preview
+    self.get_preview_context(request, mode_name),
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 1916, in get_preview_context
+    return self.get_context(request)
+  File "/usr/local/lsws/Example/html/mysite/website/models.py", line 268, in get_context
+    lat = self.seo_struct_org_dict.get('geo')['latitude']
+TypeError: 'NoneType' object is not subscriptable
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+Internal Server Error: /ptf/dhammavati/
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 669, in _get_response
+    response = obj.serve_preview(request, preview_mode)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 802, in serve_preview
+    self.get_preview_context(request, mode_name),
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 1916, in get_preview_context
+    return self.get_context(request)
+  File "/usr/local/lsws/Example/html/mysite/website/models.py", line 268, in get_context
+    lat = self.seo_struct_org_dict.get('geo')['latitude']
+TypeError: 'NoneType' object is not subscriptable
+ERROR:django.request:Internal Server Error: /ptf/dhammavati/
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 669, in _get_response
+    response = obj.serve_preview(request, preview_mode)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 802, in serve_preview
+    self.get_preview_context(request, mode_name),
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 1916, in get_preview_context
+    return self.get_context(request)
+  File "/usr/local/lsws/Example/html/mysite/website/models.py", line 268, in get_context
+    lat = self.seo_struct_org_dict.get('geo')['latitude']
+TypeError: 'NoneType' object is not subscriptable
+Internal Server Error: /ptf/dhammavati/
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 669, in _get_response
+    response = obj.serve_preview(request, preview_mode)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 802, in serve_preview
+    self.get_preview_context(request, mode_name),
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 1916, in get_preview_context
+    return self.get_context(request)
+  File "/usr/local/lsws/Example/html/mysite/website/models.py", line 268, in get_context
+    lat = self.seo_struct_org_dict.get('geo')['latitude']
+TypeError: 'NoneType' object is not subscriptable
+ERROR:django.request:Internal Server Error: /ptf/dhammavati/
+Traceback (most recent call last):
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 669, in _get_response
+    response = obj.serve_preview(request, preview_mode)
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 802, in serve_preview
+    self.get_preview_context(request, mode_name),
+  File "/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/models/__init__.py", line 1916, in get_preview_context
+    return self.get_context(request)
+  File "/usr/local/lsws/Example/html/mysite/website/models.py", line 268, in get_context
+    lat = self.seo_struct_org_dict.get('geo')['latitude']
+TypeError: 'NoneType' object is not subscriptable
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
