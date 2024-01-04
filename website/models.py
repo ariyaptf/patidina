@@ -236,12 +236,12 @@ class TodayMessagePage(CoderedWebPage):
         return None
 
     def get_daily_quote(self):
-        today = timezone.now().date()
+        today = date.today()
         all_quotes = self.get_children().type(DailyQuotesPage).live().specific()
-        daily_quotes = all_quotes.filter(first_published_at__date=today)
-
-        if daily_quotes.exists():
-            return daily_quotes.first()
+        path_prefix = self.path
+        daily_quotes_today = DailyQuotesPage.objects.filter(path__startswith=path_prefix, date_display=today)
+        if daily_quotes_today.exists():
+            return daily_quotes_today.first()
         else:
             if all_quotes.exists():
                 return random.choice(all_quotes)
