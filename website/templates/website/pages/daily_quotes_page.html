@@ -1,14 +1,14 @@
 {% extends "coderedcms/pages/base.html" %}
 {% load wagtailadmin_tags wagtailcore_tags wagtailimages_tags coderedcms_tags %}
 
-{% block content %}  
+{% block content %}
     <article
         class="crx-article text-dark lead px-3 parallax"
         style="background-image: url('{{ background_image_url }}');"
     >
         {% block article_header %}
             <div class="container pt-5 text-center">
-                <h1>{{ self.title }}</h1>
+                <h2>{{ self.title }}</h2>
                 {% if self.caption %}
                     {% if self.seo_author %}
                         <span class="mx-2">❀</span>
@@ -52,8 +52,8 @@
     window.addEventListener('scroll', function() {
         var parallax = document.querySelector('.parallax');
         var scrollPosition = window.pageYOffset;
-        
+
         parallax.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
-    });    
+    });
 </script>
 {% endblock %}

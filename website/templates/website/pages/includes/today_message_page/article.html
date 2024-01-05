@@ -3,7 +3,7 @@
 <article class="crx-article text-dark lead px-3">
 
     <div class="container pt-5 text-center">
-        <h1 class="pb-4">{{ self.display_title }}</h1>
+        <h2 class="pb-4">{{ self.display_title }}</h2>
     </div>
 
     {% block article_header %}
@@ -19,7 +19,7 @@
 
             <h3 class="pt-3">{{ daily_quote.title }}</h3>
 
-            {% if daily_quote.caption %}
+            {% if daily_quote.seo_author %}
                 {% if daily_quote.seo_author %}
                     <span class="mx-2">❀</span>
                     <span class="article-author">{{ daily_quote.seo_author }}</span>

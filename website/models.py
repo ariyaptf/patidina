@@ -285,9 +285,8 @@ class DailyQuotesPage(CoderedArticlePage):
     The poetry or short article.
     """
 
-    # Override body to provide simpler content
     body = StreamField(
-        HTML_STREAMBLOCKS,
+        LAYOUT_STREAMBLOCKS,
         null=True,
         blank=True,
         use_json_field=True,
