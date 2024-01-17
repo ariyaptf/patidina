@@ -1,4 +1,4 @@
-{% extends "coderedcms/pages/base.html" %}
+{% extends "coderedcms/pages/web_page_notitle.html" %}
 {% load wagtailadmin_tags wagtailcore_tags wagtailimages_tags coderedcms_tags %}
 
 {% block content %}
@@ -48,12 +48,12 @@
 {% endblock %}
 
 {% block custom_scripts %}
-<script>
-    window.addEventListener('scroll', function() {
-        var parallax = document.querySelector('.parallax');
-        var scrollPosition = window.pageYOffset;
+    <script>
+        window.addEventListener('scroll', function() {
+            var parallax = document.querySelector('.parallax');
+            var scrollPosition = window.pageYOffset;
 
-        parallax.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
-    });
-</script>
+            parallax.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
+        });
+    </script>
 {% endblock %}

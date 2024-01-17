@@ -2,7 +2,6 @@
 Create or customize your page models here.
 """
 import random
-import ephem
 from datetime import date, datetime
 
 from django.db import models
@@ -24,10 +23,12 @@ from coderedcms.models import CoderedFormPage
 from coderedcms.models import CoderedLocationIndexPage
 from coderedcms.models import CoderedLocationPage
 from coderedcms.models import CoderedWebPage
+from coderedcms.models import CoderedStreamFormPage
 from modelcluster.fields import ParentalKey
 
 from wagtail.admin.panels import (
     FieldPanel,
+    InlinePanel,
     MultiFieldPanel,
 )
 from wagtail.fields import StreamField
@@ -311,3 +312,14 @@ class DailyQuotesPage(CoderedArticlePage):
         context = super().get_context(request, *args, **kwargs)
         context['background_image_url'] = self.get_random_background_image_url()
         return context
+
+
+class StreamFormPage(CoderedStreamFormPage):
+    class Meta:
+        verbose_name = "Stream Form"
+
+    template = "coderedcms/pages/stream_form_page.html"
+
+
+class StreamFormConfirmEmail(CoderedEmail):
+    page = ParentalKey("StreamFormPage", related_name="confirmation_emails")

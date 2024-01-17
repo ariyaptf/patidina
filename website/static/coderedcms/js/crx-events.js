@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const calendar = new FullCalendar.Calendar(el, {
             locale: 'th',
             headerToolbar: {
-                left: "prev,next",
+                left: "prev",
                 center: "title",
-                right: "today",
+                right: "next",
             },
             themeSystem: "bootstrap5",
             buttonText: {
