@@ -1,6 +1,6 @@
 # Consult release notes for supported versions of Django, Wagtail, and Python.
 # https://docs.coderedcorp.com/wagtail-crx/releases/
-coderedcms==3.0.*
+coderedcms==3.0.3
 wagtail==5.2.*
 
 astropy==6.0.0
