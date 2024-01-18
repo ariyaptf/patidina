@@ -2565,3 +2565,35 @@ TypeError: 'NoneType' object is not subscriptable
   editable_forms = UserPagePermissionsProxy(user).editable_pages()
 /usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
   warn(
+Not Found: /wp-includes/wlwmanifest.xml
+WARNING:django.request:Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+WARNING:django.request:Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+WARNING:django.request:Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+WARNING:django.request:Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+WARNING:django.request:Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+WARNING:django.request:Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+WARNING:django.request:Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+WARNING:django.request:Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+WARNING:django.request:Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+WARNING:django.request:Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+WARNING:django.request:Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+WARNING:django.request:Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+WARNING:django.request:Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+WARNING:django.request:Not Found: /sito/wp-includes/wlwmanifest.xml
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/coderedcms/wagtail_hooks.py:99: RemovedInWagtail60Warning: UserPagePermissionsProxy.editable_pages() is deprecated. Use wagtail.permission_policies.pages.PagePermissionPolicy.instances_user_has_permission_for(user, "change") instead.
+  editable_forms = UserPagePermissionsProxy(user).editable_pages()
+/usr/local/lsws/Example/html/lib/python3.10/site-packages/wagtail/admin/menu.py:27: RemovedInWagtail60Warning: The `classnames` kwarg for MenuItem is deprecated - use `classname` instead.
+  warn(
