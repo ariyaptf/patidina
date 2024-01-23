@@ -1,4 +1,5 @@
 import http.client
+import requests
 import json
 import calendar
 from django.views import View
@@ -237,3 +238,43 @@ class TestSms(View):
         return render(request, "website/pages/test_sms.html", {
             "data": data,
         })
+
+
+
+def send_otp(request):
+    # ตรวจสอบว่าเป็นการคำขอ POST และมีข้อมูลเบอร์โทรศัพท์
+    if request.method == 'POST' and 'phone_number' in request.POST:
+        phone_number = request.POST['phone_number']
+        api_key = 'f29fbe087889e72069c8d63db2c63389-1244cce2-43d8-409b-88e0-112e5674e0b7'  # ใส่ API Key ของคุณที่นี่
+        infobip_url = 'https://n81245.api.infobip.com'
+
+        headers = {
+            'Authorization': f'App {api_key}',
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+        }
+
+        # สร้างข้อความ OTP ของคุณ (แนะนำให้สร้างข้อความแบบสุ่ม)
+        otp_message = 'Your OTP is: 1234'
+
+        data = {
+            'from': 'InfoSMS',
+            'to': phone_number,
+            'text': otp_message
+        }
+
+        # ส่งคำขอไปยัง Infobip
+        response = requests.post(infobip_url, headers=headers, json=data)
+
+        # ตรวจสอบสถานะการตอบกลับ
+        if response.status_code == 200:
+            return JsonResponse({'message': 'OTP sent successfully!'})
+        else:
+            return JsonResponse({'error': 'Failed to send OTP'}, status=500)
+    else:
+        return JsonResponse({'error': 'Invalid request'}, status=400)
+
+
+def show_otp_form(request):
+    # เพียงเรนเดอร์ฟอร์มที่อยู่ใน template 'otp_form.html'
+    return render(request, 'website/pages/otp_form.html')
