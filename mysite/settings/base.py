@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 
@@ -54,6 +55,7 @@ INSTALLED_APPS = [
     "wagtail.contrib.settings",
     "wagtail.contrib.table_block",
     "wagtail.admin",
+    "wagtail_modeladmin",
     # Django
     "django.contrib.admin",
     "django.contrib.auth",

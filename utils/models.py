@@ -1,5 +1,4 @@
-import math
-from astropy.time import Time
+
 from datetime import timedelta, date
 from django.db import models
 from django.core.exceptions import ValidationError
@@ -12,7 +11,6 @@ from wagtail.admin.panels import (
     InlinePanel,
     MultiFieldPanel,
 )
-from pythaidate import CsDate
 from wagtail.models import Orderable
 from wagtail.snippets.models import register_snippet
 from .moon import calculate_moon_phase
@@ -45,6 +43,7 @@ class MoonPhaseCreatorForm(models.Model):
         calculate_moon_phase(date_str, before_date, after_date)
 
         super().save(*args, **kwargs)
+
 
 # ----------------------------
 # ImportantDaysInLunarCalendar
@@ -255,8 +254,6 @@ class PatidinaPakkhaganana(ClusterableModel):
 
     def __str__(self):
         return self.title
-
-
 
 class UposathaOfPakkhaganana(Orderable, models.Model):
     # Choices for moon phase

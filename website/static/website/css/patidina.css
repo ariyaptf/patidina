@@ -128,3 +128,7 @@ body {
         max-width: 600px;
     }
 }
+
+.mxw30px {
+    max-width: 30px !important;
+}

@@ -7,5 +7,6 @@ urlpatterns = [
         views.today_message_get_calendar_events,
         name='today_message_get_calendar_events',
     ),
-    path('api/events/', views.events_api, name='events_api')
+    path('api/events/', views.events_api, name='events_api'),
+    path('test-sms/', views.TestSms.as_view(), name='test_sms'),
 ]

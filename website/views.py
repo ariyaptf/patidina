@@ -1,4 +1,8 @@
+import http.client
+import json
 import calendar
+from django.views import View
+from django.shortcuts import render
 from datetime import date, datetime, timedelta
 from django.http import (
     Http404,
@@ -206,3 +210,30 @@ def today_message_get_calendar_events(request):
         page.get_calendar_events(start=start, end=end), safe=False
     )
 
+
+
+class TestSms(View):
+    def get(self, request):
+        conn = http.client.HTTPSConnection("n81245.api.infobip.com")
+        payload = json.dumps({
+            "messages": [
+                {
+                    "destinations": [{"to":"66984265365"},{"to":"66984265365"}],
+                    "from": "ServiceSMS",
+                    "text": "Hello,\n\nThis is a test message from Infobip. Have a nice day!"
+                }
+            ]
+        })
+        headers = {
+            'Authorization': 'App f29fbe087889e72069c8d63db2c63389-1244cce2-43d8-409b-88e0-112e5674e0b7',
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        }
+        conn.request("POST", "/sms/2/text/advanced", payload, headers)
+        res = conn.getresponse()
+        data = res.read()
+        print(data.decode("utf-8"))
+
+        return render(request, "website/pages/test_sms.html", {
+            "data": data,
+        })
