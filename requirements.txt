@@ -15,3 +15,4 @@ pythaidate==0.2.0
 skyfield==1.46
 wand==0.6.13
 wagtail-modeladmin==1.0.0
+infobip-api-python-client==3.0.3

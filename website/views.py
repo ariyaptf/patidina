@@ -25,6 +25,9 @@ from utils.calendar import (
     adhikamasa
 )
 
+from infobip_api_client.api_client import ApiClient, Configuration
+from infobip_api_client.model.sms_advanced_textual_request import SmsAdvancedTextualRequest
+from infobip_api_client.api.send_sms_api import SendSmsApi
 
 def events_api(request):
     # รับพารามิเตอร์ 'start' และ 'end' จากคำขอ
@@ -242,29 +245,29 @@ class TestSms(View):
 
 
 def send_otp(request):
+    # initial
+    client_config = Configuration(
+        host="n81245.api.infobip.com",
+        api_key={"APIKeyHeader": "f29fbe087889e72069c8d63db2c63389-1244cce2-43d8-409b-88e0-112e5674e0b7"},
+        api_key_prefix={"APIKeyHeader": "App"},
+    )
+    api_client = ApiClient(client_config)
     # ตรวจสอบว่าเป็นการคำขอ POST และมีข้อมูลเบอร์โทรศัพท์
     if request.method == 'POST' and 'phone_number' in request.POST:
         phone_number = request.POST['phone_number']
-        api_key = 'f29fbe087889e72069c8d63db2c63389-1244cce2-43d8-409b-88e0-112e5674e0b7'  # ใส่ API Key ของคุณที่นี่
-        infobip_url = 'https://n81245.api.infobip.com'
 
-        headers = {
-            'Authorization': f'App {api_key}',
-            'Content-Type': 'application/json',
-            'Accept': 'application/json',
-        }
+        sms_request = SmsAdvancedTextualRequest(
+            messages=[
+                {
+                    "from": "InfoSMS",
+                    "destinations": [{"to": "YOUR_PHONE_NUMBER"}],
+                    "text": "This is a sample message"
+                }
+            ]
+        )
 
-        # สร้างข้อความ OTP ของคุณ (แนะนำให้สร้างข้อความแบบสุ่ม)
-        otp_message = 'Your OTP is: 1234'
-
-        data = {
-            'from': 'InfoSMS',
-            'to': phone_number,
-            'text': otp_message
-        }
-
-        # ส่งคำขอไปยัง Infobip
-        response = requests.post(infobip_url, headers=headers, json=data)
+        send_sms_api = SendSmsApi(api_client)
+        response = send_sms_api.send_sms_message(sms_advanced_textual_request=sms_request)
 
         # ตรวจสอบสถานะการตอบกลับ
         if response.status_code == 200:
