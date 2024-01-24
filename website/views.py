@@ -27,6 +27,7 @@ from utils.calendar import (
 
 from infobip_api_client.api_client import ApiClient, Configuration
 from infobip_api_client.model.sms_advanced_textual_request import SmsAdvancedTextualRequest
+from infobip_api_client.model.sms_textual_message import SmsTextualMessage
 from infobip_api_client.api.send_sms_api import SendSmsApi
 
 def events_api(request):
@@ -256,16 +257,22 @@ def send_otp(request):
     if request.method == 'POST' and 'phone_number' in request.POST:
         phone_number = request.POST['phone_number']
 
-        sms_request = SmsAdvancedTextualRequest(
-            messages=[
-                {
-                    "from": "InfoSMS",
-                    "destinations": [{"to": "YOUR_PHONE_NUMBER"}],
-                    "text": "This is a sample message"
-                }
-            ]
+        # สร้าง ApiClient พร้อม configuration
+        api_client = ApiClient(configuration=client_config)
+
+        # สร้างอ็อบเจ็กต์ SmsTextualMessage
+        message = SmsTextualMessage(
+            from_="InfoSMS",
+            destinations=[{"to": phone_number}],
+            text="This is a sample message"
         )
 
+        # สร้าง SmsAdvancedTextualRequest พร้อมกับ message
+        sms_request = SmsAdvancedTextualRequest(
+            messages=[message]
+        )
+
+        # ใช้ SendSmsApi สำหรับการส่ง SMS
         send_sms_api = SendSmsApi(api_client)
         response = send_sms_api.send_sms_message(sms_advanced_textual_request=sms_request)
 
