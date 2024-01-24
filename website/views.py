@@ -223,9 +223,13 @@ class TestSms(View):
         payload = json.dumps({
             "messages": [
                 {
-                    "destinations": [{"to":"66984265365"},{"to":"66984265365"}],
-                    "from": "ServiceSMS",
-                    "text": "Hello,\n\nThis is a test message from Infobip. Have a nice day!"
+                    "destinations": [
+                        {
+                            "to": "66984265365"
+                        }
+                    ],
+                    "from": "InfoSMS",
+                    "text": "This is a sample message"
                 }
             ]
         })
@@ -234,10 +238,10 @@ class TestSms(View):
             'Content-Type': 'application/json',
             'Accept': 'application/json'
         }
+
         conn.request("POST", "/sms/2/text/advanced", payload, headers)
         res = conn.getresponse()
         data = res.read()
-        print(data.decode("utf-8"))
 
         return render(request, "website/pages/test_sms.html", {
             "data": data,
