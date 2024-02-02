@@ -48,6 +48,9 @@ from .blocks import (
     HTML_STREAMBLOCKS
 )
 
+# ------------------------------
+# ArticlePage
+# ------------------------------
 class ArticlePage(CoderedArticlePage):
     """
     Article, suitable for news or blog content.
@@ -62,7 +65,6 @@ class ArticlePage(CoderedArticlePage):
 
     template = "coderedcms/pages/article_page.html"
     search_template = "coderedcms/pages/article_page.search.html"
-
 
 class ArticleIndexPage(CoderedArticleIndexPage):
     """
@@ -81,13 +83,15 @@ class ArticleIndexPage(CoderedArticleIndexPage):
     template = "coderedcms/pages/article_index_page.html"
 
 
+# ------------------------------
+# EventPage
+# ------------------------------
 class EventPage(CoderedEventPage):
     class Meta:
         verbose_name = "Event Page"
 
     parent_page_types = ["website.EventIndexPage"]
     template = "coderedcms/pages/event_page.html"
-
 
 class EventIndexPage(CoderedEventIndexPage):
     """
@@ -104,11 +108,13 @@ class EventIndexPage(CoderedEventIndexPage):
 
     template = "coderedcms/pages/event_index_page.html"
 
-
 class EventOccurrence(CoderedEventOccurrence):
     event = ParentalKey(EventPage, related_name="occurrences")
 
 
+# ------------------------------
+# FormPage
+# ------------------------------
 class FormPage(CoderedFormPage):
     """
     A page with an html <form>.
@@ -118,7 +124,6 @@ class FormPage(CoderedFormPage):
         verbose_name = "Form"
 
     template = "coderedcms/pages/form_page.html"
-
 
 class FormPageField(CoderedFormField):
     """
@@ -130,7 +135,6 @@ class FormPageField(CoderedFormField):
 
     page = ParentalKey("FormPage", related_name="form_fields")
 
-
 class FormConfirmEmail(CoderedEmail):
     """
     Sends a confirmation email after submitting a FormPage.
@@ -139,6 +143,9 @@ class FormConfirmEmail(CoderedEmail):
     page = ParentalKey("FormPage", related_name="confirmation_emails")
 
 
+# ------------------------------
+# LocationPage
+# ------------------------------
 class LocationPage(CoderedLocationPage):
     """
     A page that holds a location.  This could be a store, a restaurant, etc.
@@ -151,7 +158,6 @@ class LocationPage(CoderedLocationPage):
 
     # Only allow LocationIndexPages above this page.
     parent_page_types = ["website.LocationIndexPage"]
-
 
 class LocationIndexPage(CoderedLocationIndexPage):
     """
@@ -171,6 +177,9 @@ class LocationIndexPage(CoderedLocationIndexPage):
     template = "coderedcms/pages/location_index_page.html"
 
 
+# ------------------------------
+# WebPage
+# ------------------------------
 class WebPage(CoderedWebPage):
     """
     General use page with featureful streamfield and SEO attributes.
@@ -189,6 +198,9 @@ class WebPage(CoderedWebPage):
     template = "coderedcms/pages/web_page.html"
 
 
+# ------------------------------
+# TodayMessagePage
+# ------------------------------
 class TodayMessagePage(CoderedWebPage):
     """
     Short and impressive article for daily learning with today's calendar and events.
@@ -281,6 +293,9 @@ class TodayMessagePage(CoderedWebPage):
         return context
 
 
+# ------------------------------
+# DailyQuotesPage
+# ------------------------------
 class DailyQuotesPage(CoderedArticlePage):
     """
     The poetry or short article.
@@ -314,12 +329,19 @@ class DailyQuotesPage(CoderedArticlePage):
         return context
 
 
+# ------------------------------
+# StreamFormPage
+# ------------------------------
 class StreamFormPage(CoderedStreamFormPage):
     class Meta:
         verbose_name = "Stream Form"
 
     template = "coderedcms/pages/stream_form_page.html"
 
-
 class StreamFormConfirmEmail(CoderedEmail):
     page = ParentalKey("StreamFormPage", related_name="confirmation_emails")
+
+
+# ------------------------------
+# PTFPandhammaPage
+# ------------------------------

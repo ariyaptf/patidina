@@ -219,76 +219,24 @@ def today_message_get_calendar_events(request):
 
 class TestSms(View):
     def get(self, request):
-        conn = http.client.HTTPSConnection("n81245.api.infobip.com")
-        payload = json.dumps({
-            "messages": [
-                {
-                    "destinations": [
-                        {
-                            "to": "66984265365"
-                        }
-                    ],
-                    "from": "InfoSMS",
-                    "text": "This is a sample message"
-                }
-            ]
-        })
-        headers = {
-            'Authorization': 'App f29fbe087889e72069c8d63db2c63389-1244cce2-43d8-409b-88e0-112e5674e0b7',
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
+        url = "https://api.send-sms.in.th/api/v2/SendSMS"
+        params = {
+            "SenderId": "MAILBITTEST",
+            "Is_Unicode": "true",
+            "Is_Flash": "true",
+            "Message": "0000",
+            "MobileNumbers": "66984265365",
+            "apiKey": "xk9YNvcYnuUhmTf8jFC8DeaWs9VMMErzNyeZh8+RQko=",
+            "clientId": "f0e9ea23-e288-436c-bc4d-43f56bb36fae"
         }
-
-        conn.request("POST", "/sms/2/text/advanced", payload, headers)
-        res = conn.getresponse()
-        data = res.read()
-
-        return render(request, "website/pages/test_sms.html", {
-            "data": data,
-        })
+        response = requests.get(url, params=params)
+        return JsonResponse(response.json())
 
 
 
 def send_otp(request):
-    # initial
-    client_config = Configuration(
-        host="n81245.api.infobip.com",
-        api_key={"APIKeyHeader": "f29fbe087889e72069c8d63db2c63389-1244cce2-43d8-409b-88e0-112e5674e0b7"},
-        api_key_prefix={"APIKeyHeader": "App"},
-    )
-    api_client = ApiClient(client_config)
-    # ตรวจสอบว่าเป็นการคำขอ POST และมีข้อมูลเบอร์โทรศัพท์
-    if request.method == 'POST' and 'phone_number' in request.POST:
-        phone_number = request.POST['phone_number']
-
-        # สร้าง ApiClient พร้อม configuration
-        api_client = ApiClient(configuration=client_config)
-
-        # สร้างอ็อบเจ็กต์ SmsTextualMessage
-        message = SmsTextualMessage(
-            from_="InfoSMS",
-            destinations=[{"to": phone_number}],
-            text="This is a sample message"
-        )
-
-        # สร้าง SmsAdvancedTextualRequest พร้อมกับ message
-        sms_request = SmsAdvancedTextualRequest(
-            messages=[message]
-        )
-
-        # ใช้ SendSmsApi สำหรับการส่ง SMS
-        send_sms_api = SendSmsApi(api_client)
-        response = send_sms_api.send_sms_message(sms_advanced_textual_request=sms_request)
-
-        # ตรวจสอบสถานะการตอบกลับ
-        if response.status_code == 200:
-            return JsonResponse({'message': 'OTP sent successfully!'})
-        else:
-            return JsonResponse({'error': 'Failed to send OTP'}, status=500)
-    else:
-        return JsonResponse({'error': 'Invalid request'}, status=400)
+    return
 
 
 def show_otp_form(request):
-    # เพียงเรนเดอร์ฟอร์มที่อยู่ใน template 'otp_form.html'
     return render(request, 'website/pages/otp_form.html')

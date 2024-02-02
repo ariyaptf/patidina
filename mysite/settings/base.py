@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     "django_bootstrap_icons",
     "django_social_share",
     'qr_code',
+    'pandham',
     # Wagtail CRX (CodeRed Extensions)
     "coderedcms",
     "django_bootstrap5",
