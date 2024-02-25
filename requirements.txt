@@ -16,3 +16,9 @@ skyfield==1.46
 wand==0.6.13
 wagtail-modeladmin==1.0.0
 infobip-api-python-client==3.0.3
+crispy-bootstrap5==2023.10
+django-crispy-forms==2.1
+django-htmx==1.17.2
+pyotp==2.9.0
+django-formtools==2.5.1
+python-dotenv==1.0.1

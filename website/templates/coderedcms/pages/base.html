@@ -1,5 +1,5 @@
 {% extends "coderedcms/pages/base.html" %}
-{% load static bootstrap_icons %}
+{% load static bootstrap_icons django_htmx %}
 
 {% block body_class %}
     d-flex flex-column h-100
@@ -20,4 +20,6 @@
 
 {% block custom_scripts %}
     <script src="{% static 'website/js/patidina.js' %}"></script>
+    <script src="{% static 'htmx/htmx.min.js' %}" defer></script>
+    {% django_htmx_script %}
 {% endblock %}

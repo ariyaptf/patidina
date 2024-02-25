@@ -1,0 +1,887 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-23 20:56+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\custom_user\admin.py:21
+msgid "Personal info"
+msgstr ""
+
+#: .\custom_user\admin.py:30
+msgid "Permissions"
+msgstr ""
+
+#: .\custom_user\admin.py:41
+msgid "Important dates"
+msgstr ""
+
+#: .\custom_user\models.py:50
+msgid "email address"
+msgstr ""
+
+#: .\custom_user\models.py:53
+msgid "A user with that username already exists."
+msgstr ""
+
+#: .\mysite\settings\base.py:162
+msgid "Thai"
+msgstr ""
+
+#: .\pandham\forms.py:38 .\pandham\models.py:27 .\pandham\models.py:184
+msgid "Target Groups"
+msgstr "กลุ่มเป้าหมาย"
+
+#: .\pandham\forms.py:39 .\pandham\models.py:185
+msgid "Select the target groups for this support publication."
+msgstr "กรุณาเลือกกลุ่มเป้าหมายในการปันธรรม"
+
+#: .\pandham\models.py:11
+msgid "Group Name"
+msgstr ""
+
+#: .\pandham\models.py:14 .\website\blocks\content_blocks.py:271
+msgid "Description"
+msgstr ""
+
+#: .\pandham\models.py:19
+msgid "Priority"
+msgstr ""
+
+#: .\pandham\models.py:26 .\pandham\models.py:35 .\pandham\wagtail_hooks.py:11
+msgid "Target Group"
+msgstr "กลุ่มเป้าหมาย"
+
+#: .\pandham\models.py:40 .\pandham\models.py:71 .\pandham\models.py:126
+#: .\website\blocks\content_blocks.py:266
+msgid "Name"
+msgstr "ชื่อ"
+
+#: .\pandham\models.py:43
+msgid "Address"
+msgstr ""
+
+#: .\pandham\models.py:46 .\pandham\models.py:156
+msgid "Requested Books"
+msgstr "จำนวนเล่ม"
+
+#: .\pandham\models.py:49
+msgid "Request Date"
+msgstr ""
+
+#: .\pandham\models.py:52
+msgid "Additional Information"
+msgstr ""
+
+#: .\pandham\models.py:60 .\pandham\wagtail_hooks.py:18
+msgid "Target"
+msgstr "เป้าหมายผู้รับปันธรรม"
+
+#: .\pandham\models.py:61
+msgid "Targets"
+msgstr "เป้าหมายผู้รับปันธรรม"
+
+#: .\pandham\models.py:66 .\pandham\models.py:67 .\pandham\wagtail_hooks.py:26
+msgid "Stock"
+msgstr "สต๊อก"
+
+#: .\pandham\models.py:75
+msgid "Short Description"
+msgstr ""
+
+#: .\pandham\models.py:86
+msgid "content"
+msgstr ""
+
+#: .\pandham\models.py:120
+msgid "PanDham Book"
+msgstr "หนังสือปันธรรม"
+
+#: .\pandham\models.py:122
+msgid "Select the PanDham book for support in printing and distribution."
+msgstr "เลือกหนังสือปันธรรมสำหรับสนับสนุนการจัดพิมพ์เผยแพร่"
+
+#: .\pandham\models.py:127
+msgid "Anonymous"
+msgstr "ไม่ประสงค์ออกนาม"
+
+#: .\pandham\models.py:128
+msgid "Please specify name, pseudonym, or dedication."
+msgstr "กรุณาระบุชื่อ นามแฝง หรือคำอุทิศ"
+
+#: .\pandham\models.py:132 .\website\blocks\stream_form_blocks.py:111
+msgid "Date"
+msgstr "วันที่"
+
+#: .\pandham\models.py:138 .\pandham\views.py:99
+msgid "Contribute funds"
+msgstr "สมทบทุน"
+
+#: .\pandham\models.py:139
+msgid "Intention to support the printing and distribution."
+msgstr "เลือกหนังสือปันธรรมที่ประสงค์จะสนับสนุนการจัดพิมพ์เผยแพร่"
+
+#: .\pandham\models.py:142
+msgid "Quantity"
+msgstr "จำนวนเล่ม"
+
+#: .\pandham\models.py:143
+msgid "Calculated result in the number of book volumes."
+msgstr "ผลคำนวณเป็นจำนวนเล่มหนังสือ"
+
+#: .\pandham\models.py:149
+msgid "Request Book"
+msgstr "ขอรับหนังสือ"
+
+#: .\pandham\models.py:150
+msgid "No Book Requested"
+msgstr "ให้มูลนิธิช่วยดำเนินปันธรรม"
+
+#: .\pandham\models.py:152
+msgid "Distribution Preference"
+msgstr "รูปแบบการปันธรรม"
+
+#: .\pandham\models.py:158
+msgid "Enter the number of books requested."
+msgstr "ระบุจำนวนหนังสือที่ต้องการขอรับ"
+
+#: .\pandham\models.py:162
+msgid "Phone Number"
+msgstr "หมายเลขโทรศัพท์มือถือ"
+
+#: .\pandham\models.py:163
+msgid "Contactable mobile phone number ie.0988888888 (not publicly disclosed)."
+msgstr "หมายเลขมือถือที่ติดต่อได้ เช่น 0988888888 (ไม่เผยแพร่สาธารณะ)"
+
+#: .\pandham\models.py:167 .\pandham\views.py:80
+msgid "OTP"
+msgstr "รหัส OTP"
+
+#: .\pandham\models.py:170 .\pandham\views.py:81
+msgid "Enter the OTP number."
+msgstr "เพื่อเป็นการยืนยันหมายเลขโทรศัพท์ (โปรดใส่รหัสภายใน 60 วินาที)"
+
+#: .\pandham\models.py:175
+msgid "Shipping Address"
+msgstr "ที่อยู่ในการจัดส่ง"
+
+#: .\pandham\models.py:178
+msgid "Number of books for PanDham"
+msgstr "จำนวนหนังสือสำหรับปันธรรม"
+
+#: .\pandham\models.py:190
+msgid "Target Address"
+msgstr "รายละเอียดในการจัดส่ง"
+
+#: .\pandham\models.py:191
+msgid "Please provide the address of the PanDham recipient."
+msgstr "กรุณาระบุชื่อ-ที่อยู่ และหมายเลขโทรศัพท์ของผู้รับปันธรรม"
+
+#: .\pandham\models.py:194
+msgid "Memo or Note"
+msgstr "บันทึกช่วยจำ หรือ หมายเหตุ"
+
+#: .\pandham\models.py:197
+msgid "Enter any additional notes or comments."
+msgstr "ข้อความบันทึกเพื่อช่วยจำ หรือสื่อสารกับเจ้าหน้าที่มูลนิธิฯ"
+
+#: .\pandham\models.py:201
+msgid "Is Completed"
+msgstr "ดำเนินการแล้วเสร็จ"
+
+#: .\pandham\models.py:208 .\pandham\wagtail_hooks.py:33
+msgid "Support Publication"
+msgstr "สนับสนุนการจัดพิมพ์"
+
+#: .\pandham\models.py:209
+msgid "Support Publications"
+msgstr "สนับสนุนการจัดพิมพ์"
+
+#: .\pandham\templates\pandham\support.html:24
+msgid "first step"
+msgstr ""
+
+#: .\pandham\templates\pandham\support.html:27
+msgid "Submit"
+msgstr "บันทึกข้อมูล"
+
+#: .\pandham\views.py:76
+msgid "Enter OTP"
+msgstr "กรอกรหัส OTP"
+
+#: .\pandham\views.py:100
+msgid "...."
+msgstr "...."
+
+#: .\pandham\wagtail_hooks.py:42
+msgid "PanDham"
+msgstr "ปันธรรม"
+
+#: .\utils\models.py:35 .\utils\models.py:36
+msgid "Moon Phase Creator Form"
+msgstr "แบบฟอร์มการสร้างวันที่แบบจันทรคติ"
+
+#: .\utils\models.py:88 .\utils\models.py:93 .\utils\models.py:277
+msgid "moon phase"
+msgstr "ข้างขึ้น-ข้างแรม"
+
+#: .\utils\models.py:89 .\utils\models.py:94 .\utils\models.py:193
+msgid "day"
+msgstr "วัน"
+
+#: .\utils\models.py:90 .\utils\models.py:95 .\utils\models.py:194
+msgid "month"
+msgstr "เดือน"
+
+#: .\utils\models.py:98
+msgid "lunar date"
+msgstr "วันที่ตามปฏิทินจันทรคติ"
+
+#: .\utils\models.py:99
+msgid "lunar date in adhikamasa"
+msgstr "วันที่ตามปฏิทินจันทรคติในเดือนอธิกมาศ"
+
+#: .\utils\models.py:112 .\utils\models.py:201
+msgid "Details"
+msgstr "รายละเอียด"
+
+#: .\utils\models.py:116 .\utils\models.py:117
+msgid "Important Days in Lunar Calendar"
+msgstr "วันสำคัญตามปฏิทินจันทรคติ"
+
+#: .\utils\models.py:144 .\utils\models.py:213
+msgid "Detail"
+msgstr "รายละเอียด"
+
+#: .\utils\models.py:146 .\utils\models.py:215
+msgid "name"
+msgstr "ชื่อ"
+
+#: .\utils\models.py:148
+msgid "Buddhist Commemorative Day"
+msgstr "วันสำคัญทางพุทธศาสนา"
+
+#: .\utils\models.py:155 .\utils\models.py:221
+msgid "Article Page"
+msgstr "บทความ"
+
+#: .\utils\models.py:172 .\utils\models.py:173
+msgid "Important Days in Solar Calendar"
+msgstr "วันที่ตามปฏิทินสุริยคติ"
+
+#: .\utils\models.py:179
+msgid "January"
+msgstr "มกราคม"
+
+#: .\utils\models.py:180
+msgid "February"
+msgstr "กุมภาพันธ์"
+
+#: .\utils\models.py:181
+msgid "March"
+msgstr "มีนาคม"
+
+#: .\utils\models.py:182
+msgid "April"
+msgstr "เมษายน"
+
+#: .\utils\models.py:183
+msgid "May"
+msgstr "พฤษภาคม"
+
+#: .\utils\models.py:184
+msgid "June"
+msgstr "มิถุนายน"
+
+#: .\utils\models.py:185
+msgid "July"
+msgstr "กรกฏาคม"
+
+#: .\utils\models.py:186
+msgid "August"
+msgstr "สิงหาคม"
+
+#: .\utils\models.py:187
+msgid "September"
+msgstr "กันยายน"
+
+#: .\utils\models.py:188
+msgid "October"
+msgstr "ตุลาคม"
+
+#: .\utils\models.py:189
+msgid "November"
+msgstr "พฤศจิกายน"
+
+#: .\utils\models.py:190
+msgid "December"
+msgstr "ธันวาคม"
+
+#: .\utils\models.py:234
+msgid "The year must be a 4-digit number and no less than 2500 (Buddhist Era)."
+msgstr "ปีต้องเป็นตัวเลข 4 หลักและไม่น้อยกว่า 2500 (พุทธศักราช)"
+
+#: .\utils\models.py:244
+msgid "title"
+msgstr "ชื่อเรื่อง"
+
+#: .\utils\models.py:247
+msgid ""
+"Enter the year in Buddhist Era format, which should be a 4-digit number and "
+"no less than 2500."
+msgstr ""
+
+#: .\utils\models.py:251 .\utils\models.py:252
+msgid "Paṭidina Pakkhagaṇanā"
+msgstr "ปักขคณนา"
+
+#: .\utils\models.py:256 .\utils\models.py:274
+msgid "Uposatha Day"
+msgstr "วันอุโบสถ"
+
+#: .\utils\templates\utils\form_successfully_submitted.html:8
+msgid "Look!"
+msgstr ""
+
+#: .\utils\templates\utils\form_successfully_submitted.html:8
+msgid "You've got message"
+msgstr ""
+
+#: .\utils\templates\utils\form_successfully_submitted.html:10
+msgid "The form has been successfully submitted."
+msgstr ""
+
+#: .\utils\templates\utils\form_successfully_submitted.html:12
+msgid "Go Back"
+msgstr ""
+
+#: .\website\blocks\__init__.py:80 .\website\blocks\__init__.py:114
+#: .\website\blocks\__init__.py:136 .\website\blocks\__init__.py:154
+msgid "HTML"
+msgstr ""
+
+#: .\website\blocks\__init__.py:160 .\website\blocks\__init__.py:161
+#: .\website\blocks\__init__.py:162 .\website\blocks\__init__.py:163
+#: .\website\blocks\__init__.py:164 .\website\blocks\__init__.py:165
+#: .\website\blocks\__init__.py:166 .\website\blocks\__init__.py:167
+#: .\website\blocks\__init__.py:168 .\website\blocks\__init__.py:169
+#: .\website\blocks\__init__.py:170 .\website\blocks\__init__.py:171
+msgid "Fields"
+msgstr ""
+
+#: .\website\blocks\base_blocks.py:121
+msgid "Button Title"
+msgstr ""
+
+#: .\website\blocks\base_blocks.py:127
+msgid "Button Style"
+msgstr ""
+
+#: .\website\blocks\base_blocks.py:133
+msgid "Button Size"
+msgstr ""
+
+#: .\website\blocks\base_blocks.py:149
+msgid "Custom CSS Class"
+msgstr ""
+
+#: .\website\blocks\base_blocks.py:154
+msgid "Custom ID"
+msgstr ""
+
+#: .\website\blocks\base_blocks.py:161
+msgid "Advanced Settings"
+msgstr ""
+
+#: .\website\blocks\base_blocks.py:174
+msgid "Template"
+msgstr ""
+
+#: .\website\blocks\base_blocks.py:190
+msgid "Tracking Event Category"
+msgstr ""
+
+#: .\website\blocks\base_blocks.py:195
+msgid "Tracking Event Label"
+msgstr ""
+
+#: .\website\blocks\base_blocks.py:208
+msgid "Column Breakpoint"
+msgstr ""
+
+#: .\website\blocks\base_blocks.py:210
+msgid ""
+"Screen size at which the column will expand horizontally or stack vertically."
+msgstr ""
+
+#: .\website\blocks\base_blocks.py:276
+msgid "Content"
+msgstr ""
+
+#: .\website\blocks\base_blocks.py:310
+msgid "Page link"
+msgstr ""
+
+#: .\website\blocks\base_blocks.py:314 .\website\blocks\html_blocks.py:49
+msgid "Document link"
+msgstr ""
+
+#: .\website\blocks\base_blocks.py:319
+msgid "Other link"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:41 .\website\blocks\content_blocks.py:155
+#: .\website\blocks\content_blocks.py:261 .\website\blocks\html_blocks.py:183
+#: .\website\blocks\html_blocks.py:189 .\website\blocks\html_blocks.py:198
+msgid "Image"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:46
+msgid "Title"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:51
+msgid "Subtitle"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:55
+msgid "Body"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:61
+msgid "Links"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:67
+msgid "Card"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:79
+msgid "Carousel"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:92
+msgid "Film Strip"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:104
+msgid "Image Collection"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:110
+msgid "Image Gallery"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:121
+msgid "Modal heading"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:125
+msgid "Modal content"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:132
+msgid "Simple Text"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:138
+msgid "Modal footer"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:144
+msgid "Modal"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:151
+msgid "Display text"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:166 .\website\blocks\html_blocks.py:108
+msgid "URL"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:171
+msgid "External Link"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:180
+msgid "Page"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:185
+msgid "Page Link"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:194
+msgid "Document"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:199
+msgid "Document Link"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:214
+msgid "Sub-links"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:224
+msgid "External link with sub-links"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:235
+msgid "Show child pages"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:237
+msgid "Automatically show a link to the Page’s child pages as a dropdown menu."
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:242
+msgid "Page link with sub-links"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:251
+msgid "Document link with sub-links"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:275
+msgid "Price"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:276
+msgid "Any text here. Include currency sign if desired."
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:282
+msgid "Price List Item"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:293
+msgid "Heading"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:299
+msgid "Items"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:305
+msgid "Price List"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:317
+msgid "Show content walls on children pages?"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:319
+msgid ""
+"If this is checked, the content walls will be displayed on all children "
+"pages of this page."
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:326
+msgid "Content Wall"
+msgstr ""
+
+#: .\website\blocks\content_blocks.py:339
+msgid "Reusable Content"
+msgstr ""
+
+#: .\website\blocks\custom_blocks.py:12
+msgid "Verse Line"
+msgstr ""
+
+#: .\website\blocks\custom_blocks.py:20
+msgid "Stanza"
+msgstr ""
+
+#: .\website\blocks\custom_blocks.py:29
+msgid "Poetry"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:38
+msgid "Button Link"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:57
+msgid "Download"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:68
+msgid "Search query"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:70
+msgid "Address or search term used to find your location on the map."
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:76
+msgid "Map title"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:77
+msgid "Map title for screen readers, ex: \"Map to Goodale Park\""
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:82
+msgid "Google place ID"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:83
+msgid "Requires API key to use place ID."
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:88
+msgid "Map zoom level"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:90
+msgid ""
+"Requires API key to use zoom. 1: World, 5: Landmass/continent, 10: City, 15: "
+"Streets, 20: Buildings"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:98
+msgid "Google Map"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:110
+msgid "Link to a YouTube/Vimeo video, tweet, facebook post, etc."
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:117
+msgid "Embed Media"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:127 .\website\blocks\html_blocks.py:143
+#: .\website\blocks\html_blocks.py:159
+msgid "Text"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:133
+msgid "Heading 1"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:149
+msgid "Heading 2"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:165
+msgid "Heading 3"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:203
+msgid "Alternate text to show if the image doesn’t load"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:209
+msgid "Image Link"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:220
+msgid "Parent page"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:222
+msgid ""
+"Show a preview of pages that are children of the selected page. Uses "
+"ordering specified in the page’s LAYOUT tab."
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:228
+msgid "Classified as"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:229
+msgid "Only show pages that are classified with this term."
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:235
+msgid "Show body preview"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:239
+msgid "Number of pages to show"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:245
+msgid "Latest Pages"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:287
+msgid "Page to preview"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:288
+msgid "Show a mini preview of the selected page."
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:294
+msgid "Page Preview"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:305
+msgid "Quote Text"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:310
+msgid "Author"
+msgstr ""
+
+#: .\website\blocks\html_blocks.py:316
+msgid "Quote"
+msgstr ""
+
+#: .\website\blocks\layout_blocks.py:27
+msgid "Column size"
+msgstr ""
+
+#: .\website\blocks\layout_blocks.py:45 .\website\blocks\layout_blocks.py:64
+#: .\website\blocks\layout_blocks.py:81
+msgid "Full width"
+msgstr ""
+
+#: .\website\blocks\layout_blocks.py:51
+msgid "Responsive Grid Row"
+msgstr ""
+
+#: .\website\blocks\layout_blocks.py:70
+msgid "Card Grid"
+msgstr ""
+
+#: .\website\blocks\layout_blocks.py:85
+msgid "Parallax Effect"
+msgstr ""
+
+#: .\website\blocks\layout_blocks.py:87
+msgid ""
+"Background images scroll slower than foreground images, creating an illusion "
+"of depth."
+msgstr ""
+
+#: .\website\blocks\layout_blocks.py:94
+msgid "Tile background image"
+msgstr ""
+
+#: .\website\blocks\layout_blocks.py:99
+msgid "Background color"
+msgstr ""
+
+#: .\website\blocks\layout_blocks.py:100 .\website\blocks\layout_blocks.py:106
+msgid "Hexadecimal, rgba, or CSS color notation (e.g. #ff0011)"
+msgstr ""
+
+#: .\website\blocks\layout_blocks.py:105
+msgid "Text color"
+msgstr ""
+
+#: .\website\blocks\stream_form_blocks.py:21
+msgid "Condition Trigger ID"
+msgstr ""
+
+#: .\website\blocks\stream_form_blocks.py:23
+msgid ""
+"The \"Custom ID\" of another field that that will trigger this field to be "
+"shown/hidden."
+msgstr ""
+
+#: .\website\blocks\stream_form_blocks.py:30
+msgid "Condition Trigger Value"
+msgstr ""
+
+#: .\website\blocks\stream_form_blocks.py:32
+msgid ""
+"The value of the field in \"Condition Trigger ID\" that will trigger this "
+"field to be shown."
+msgstr ""
+
+#: .\website\blocks\stream_form_blocks.py:55
+msgid "Text or Email input"
+msgstr ""
+
+#: .\website\blocks\stream_form_blocks.py:63
+msgid "Multi-line text"
+msgstr ""
+
+#: .\website\blocks\stream_form_blocks.py:71
+msgid "Numbers only"
+msgstr ""
+
+#: .\website\blocks\stream_form_blocks.py:79
+msgid "Single Checkbox"
+msgstr ""
+
+#: .\website\blocks\stream_form_blocks.py:87
+msgid "Radios"
+msgstr ""
+
+#: .\website\blocks\stream_form_blocks.py:95
+msgid "Dropdown"
+msgstr ""
+
+#: .\website\blocks\stream_form_blocks.py:103
+msgid "Checkboxes"
+msgstr ""
+
+#: .\website\blocks\stream_form_blocks.py:122
+msgid "Time"
+msgstr ""
+
+#: .\website\blocks\stream_form_blocks.py:133
+msgid "Date and Time"
+msgstr ""
+
+#: .\website\blocks\stream_form_blocks.py:144
+msgid "Image Upload"
+msgstr ""
+
+#: .\website\blocks\stream_form_blocks.py:152
+msgid "Secure File Upload"
+msgstr ""
+
+#: .\website\models.py:216
+msgid "Display title"
+msgstr ""
+
+#: .\website\templates\coderedcms\snippets\navbar.html:38
+msgid "Search"
+msgstr ""
+
+#: .\website\templates\coderedcms\snippets\navbar.html:54
+msgid "Light"
+msgstr ""
+
+#: .\website\templates\coderedcms\snippets\navbar.html:60
+msgid "Dark"
+msgstr ""
+
+#~ msgid "Enter OTP:"
+#~ msgstr "โปรดป้อนรหัส OTP"
+
+#~ msgid "Mobile phone number for contact and identity verification."
+#~ msgstr "หมายเลขโทรศัพท์มือถือที่สามารถติดต่อได้เพื่อการยืนยันตัวตน"
+
+#~ msgid "Amount"
+#~ msgstr "จำนวนเงิน"
+
+#~ msgid "Method of PanDham distribution."
+#~ msgstr "เลือกรูปแบบการปันธรรม"
+
+#~ msgid "Note"
+#~ msgstr "บันทึก"
+
+#~ msgid "pandham"
+#~ msgstr "ปันธรรม"

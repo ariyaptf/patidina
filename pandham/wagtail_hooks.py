@@ -25,7 +25,7 @@ class PanDhamBookAdmin(ModelAdmin):
     model = PanDhamBook
     menu_label = _("Stock")
     menu_icon = 'decimal'
-    list_display = ('name',)
+    list_display = ('name', 'stock', 'price')
     search_fields = ('name', 'short_description')
 
 class SupportPublicationAdmin(ModelAdmin):

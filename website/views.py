@@ -1,9 +1,4 @@
-import http.client
-import requests
-import json
 import calendar
-from django.views import View
-from django.shortcuts import render
 from datetime import date, datetime, timedelta
 from django.http import (
     Http404,
@@ -25,10 +20,6 @@ from utils.calendar import (
     adhikamasa
 )
 
-from infobip_api_client.api_client import ApiClient, Configuration
-from infobip_api_client.model.sms_advanced_textual_request import SmsAdvancedTextualRequest
-from infobip_api_client.model.sms_textual_message import SmsTextualMessage
-from infobip_api_client.api.send_sms_api import SendSmsApi
 
 def events_api(request):
     # รับพารามิเตอร์ 'start' และ 'end' จากคำขอ
@@ -217,26 +208,4 @@ def today_message_get_calendar_events(request):
 
 
 
-class TestSms(View):
-    def get(self, request):
-        url = "https://api.send-sms.in.th/api/v2/SendSMS"
-        params = {
-            "SenderId": "MAILBITTEST",
-            "Is_Unicode": "true",
-            "Is_Flash": "true",
-            "Message": "0000",
-            "MobileNumbers": "66984265365",
-            "apiKey": "xk9YNvcYnuUhmTf8jFC8DeaWs9VMMErzNyeZh8+RQko=",
-            "clientId": "f0e9ea23-e288-436c-bc4d-43f56bb36fae"
-        }
-        response = requests.get(url, params=params)
-        return JsonResponse(response.json())
 
-
-
-def send_otp(request):
-    return
-
-
-def show_otp_form(request):
-    return render(request, 'website/pages/otp_form.html')

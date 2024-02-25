@@ -1,10 +1,10 @@
 from wagtail import blocks
 from coderedcms.blocks import BaseBlock
+from coderedcms.blocks.base_blocks import CoderedAdvSettings
 
 from django.utils.translation import gettext_lazy as _
 
-
-class VerseBlock(blocks.StructBlock):
+class VerseBlock(BaseBlock):
     verse = blocks.TextBlock()
 
     class Meta:

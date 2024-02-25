@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 import os
 from pathlib import Path
-
+from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: BASE_DIR / "subdir".
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -66,7 +66,11 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django.contrib.sitemaps",
     # More
+    "crispy_forms",
+    "crispy_bootstrap5",
     "django_extensions",
+    "django_htmx",
+    "formtools",
 ]
 
 MIDDLEWARE = [
@@ -85,6 +89,10 @@ MIDDLEWARE = [
     "wagtail.contrib.redirects.middleware.RedirectMiddleware",
     # Fetch from cache. Must be LAST.
     "wagtailcache.cache.FetchFromCacheMiddleware",
+    # Locale
+    "django.middleware.locale.LocaleMiddleware",
+    # Htmx
+    "django_htmx.middleware.HtmxMiddleware",
 ]
 
 ROOT_URLCONF = "mysite.urls"
@@ -92,6 +100,7 @@ ROOT_URLCONF = "mysite.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
+        'DIRS': [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -143,11 +152,19 @@ AUTH_USER_MODEL = "custom_user.User"
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale'),
+]
+
+LANGUAGE_CODE = "th"
+
+LANGUAGES = [
+    ('th', _('Thai')),
+]
 
 TIME_ZONE = "Asia/Bangkok"
 
-USE_I18N = False
+USE_I18N = True
 
 USE_TZ = True
 
@@ -211,3 +228,7 @@ CACHES = {
 }
 
 QR_CODE_CACHE_ALIAS = 'qr-code'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"

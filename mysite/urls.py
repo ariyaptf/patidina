@@ -2,16 +2,19 @@ from coderedcms import admin_urls as crx_admin_urls
 from coderedcms import search_urls as crx_search_urls
 from coderedcms import urls as crx_urls
 from django.conf import settings
+from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
 from django.urls import include
 from django.urls import path
 from wagtail.documents import urls as wagtaildocs_urls
 
 
-urlpatterns = [
+urlpatterns = i18n_patterns(
     # Admin
     path("django-admin/", admin.site.urls),
     path("admin/", include(crx_admin_urls)),
+    # i18n
+    path('i18n/', include('django.conf.urls.i18n')),
     # Documents
     path("docs/", include(wagtaildocs_urls)),
     # Search
@@ -20,12 +23,13 @@ urlpatterns = [
     # the page serving mechanism. This should be the last pattern in
     # the list:
     path("website/", include('website.urls')),
+    path("pandham/", include('pandham.urls')),
     path("utils/", include('utils.urls')),
     path("", include(crx_urls)),
     # Alternatively, if you want pages to be served from a subpath
     # of your site, rather than the site root:
     #    path("pages/", include(crx_urls)),
-]
+)
 
 
 # fmt: off

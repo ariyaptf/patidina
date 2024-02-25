@@ -118,23 +118,31 @@ class SupportPublication(models.Model):
         PanDhamBook,
         on_delete=models.CASCADE,
         verbose_name=_("PanDham Book"),
-        related_name="support_publication"
+        related_name="support_publication",
+        help_text=_("Select the PanDham book for support in printing and distribution.")
     )
     name = models.CharField(
         max_length=255,
-        verbose_name=_("Name")
+        verbose_name=_("Name"),
+        default=_("Anonymous"),
+        help_text=_("Please specify name, pseudonym, or dedication.")
     )
-    date_contribute = models.DateTimeField(
-        auto_now_add=True,
-        verbose_name=_("Date")
+    phone_number = models.CharField(
+        max_length=20,
+        verbose_name=_("Phone Number"),
+        help_text=_("Contactable mobile phone number ie.0988888888 (not publicly disclosed).")
     )
     amount_contributed = models.DecimalField(
         max_digits=10,
         decimal_places=2,
-        verbose_name=_("Amount")
+        default=0,
+        verbose_name=_("Contribute funds"),
+        help_text=_("Intention to support the printing and distribution.")
     )
     quantity = models.PositiveIntegerField(
-        verbose_name=_("Quantity")
+        verbose_name=_("Quantity"),
+        help_text=_("Calculated result in the number of book volumes."),
+        default=0
     )
     distribution_preference = models.CharField(
         max_length=100,
@@ -142,40 +150,49 @@ class SupportPublication(models.Model):
             ('request_book', _("Request Book")),
             ('no_book_request', _("No Book Requested"))
         ],
-        verbose_name=_("Distribution Preference")
+        verbose_name=_("Distribution Preference"),
+        default='no_book_request',
     )
     requested_books = models.PositiveIntegerField(
         verbose_name=_("Requested Books"),
-        default=0
-    )
-    phone_number = models.CharField(
-        max_length=20,
-        verbose_name=_("Phone Number")
+        default=0,
+        help_text=_("Enter the number of books requested.")
     )
     shipping_address = models.TextField(
         blank=True,
+        null=True,
         verbose_name=_("Shipping Address")
     )
-    otp = models.CharField(
-        max_length=6,
-        verbose_name=_("OTP Number")
-    )
-    pandhann_books = models.PositiveIntegerField(
-        verbose_name=_("PanDham Books"),
+    for_PanDham = models.PositiveIntegerField(
+        verbose_name=_("Number of books for PanDham"),
         default=0
     )
     target_groups = models.ManyToManyField(
         'PanDhamTargetGroup',
         blank=True,
-        verbose_name=_("Target Groups")
+        verbose_name=_("Target Groups"),
+        help_text=_("Select the target groups for this support publication.")
     )
     target_address = models.TextField(
         blank=True,
-        verbose_name=_("Target Address")
+        null=True,
+        verbose_name=_("Target Address"),
+        help_text=_("Please provide the address of the PanDham recipient.")
     )
     note = models.TextField(
-        verbose_name=_("Note"),
-        blank=True
+        verbose_name=_("Memo or Note"),
+        blank=True,
+        null=True,
+        help_text=_("Enter any additional notes or comments.")
+    )
+    otp = models.CharField(
+        max_length=6,
+        verbose_name=_("OTP"),
+        help_text=_("Enter the OTP number.")
+    )
+    date_contribute = models.DateTimeField(
+        auto_now_add=True,
+        verbose_name=_("Date")
     )
     is_completed = models.BooleanField(
         default=False,

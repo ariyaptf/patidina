@@ -3,7 +3,9 @@
         {% for stanza in self.stanzas %}
             <div class="stanza {% if stanza.poetry_layout == 'double_columns' %}two-columns{% endif %}">
                 {% for verse in stanza.verses %}
-                    <div class="line">{{ verse.verse }}</div>
+                    <div class="{{ verse.settings.custom_css_class }}">
+                        {{ verse.verse }}
+                    </div>
                 {% endfor %}
             </div>
         {% endfor %}

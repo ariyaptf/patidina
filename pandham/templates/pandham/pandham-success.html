@@ -1,0 +1,12 @@
+{% load static i18n %}
+
+<h1>Thankyou</h1>
+
+<h1>รายการสนับสนุนเล่มพระธรรม</h1>
+<p>ชื่อผู้สนับสนุน: {{ support_publication.supporter_name }}</p>
+<p>เล่มพระธรรมที่สนับสนุน: {{ support_publication.book.title }}</p>
+<p>จำนวนเงิน: {{ support_publication.amount }}</p>
+<p>วันที่สนับสนุน: {{ support_publication.created_at }}</p>
+<p>หมายเหตุ: {{ support_publication.remark }}</p>
+
+
